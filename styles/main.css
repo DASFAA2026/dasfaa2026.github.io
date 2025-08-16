@@ -150,7 +150,7 @@ main {
 main > section {
     background-color: var(--white);
     padding: 2rem;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
     border-radius: 8px;
     box-shadow: var(--shadow);
     max-width: 1200px;
@@ -1016,7 +1016,7 @@ footer {
 /* Important Dates Section */
 .important-dates {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 2rem auto 4rem auto;
     padding: 2rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1406,6 +1406,7 @@ footer {
 .about {
     padding: 3rem 0;
     width: 100%;
+    margin: 2rem 0;
 }
 
 .about-content {
@@ -1478,7 +1479,7 @@ footer {
 }
 
 .youtube-video {
-    margin: 2rem auto;
+    margin: 4rem auto;
     max-width: 1200px;
     padding: 3rem 2rem;
 }
@@ -1651,4 +1652,76 @@ footer {
 .email a:hover i,
 .website a:hover i {
     transform: scale(1.1);
+} 
+
+/* Acknowledgment Section */
+.acknowledgment {
+    padding: 4rem 2rem;
+    background-color: var(--white);
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.acknowledgment h2 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 0.5rem;
+    text-align: left;
+}
+
+.acknowledgment h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background-color: var(--accent-color);
+}
+
+.acknowledgment ul {
+    list-style: none;
+    padding: 0;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.acknowledgment li {
+    color: #555;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+    text-align: left;
+}
+
+.acknowledgment li:before {
+    content: "•";
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.acknowledgment li:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .acknowledgment {
+        padding: 3rem 1rem;
+    }
+    
+    .acknowledgment h2 {
+        font-size: 1.5rem;
+    }
+    
+    .acknowledgment p {
+        font-size: 1rem;
+        max-width: 100%;
+    }
 } 
