@@ -7,7 +7,7 @@
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/main.css?v=1.1">
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="scripts/main.js"></script>
 </head>
@@ -244,32 +244,73 @@
             </div>
         </section>
 
+        <section class="countdown-section">
+            <div class="countdown-container">
+                <h2>Conference Countdown</h2>
+                <div class="countdown-display">
+                    <div class="time-unit">
+                        <div class="time-number" id="days">000</div>
+                        <div class="time-label">DAYS</div>
+                    </div>
+                    <div class="time-separator">:</div>
+                    <div class="time-unit">
+                        <div class="time-number" id="hours">00</div>
+                        <div class="time-label">HOURS</div>
+                    </div>
+                    <div class="time-separator">:</div>
+                    <div class="time-unit">
+                        <div class="time-number" id="minutes">00</div>
+                        <div class="time-label">MINUTES</div>
+                    </div>
+                    <div class="time-separator">:</div>
+                    <div class="time-unit">
+                        <div class="time-number" id="seconds">00</div>
+                        <div class="time-label">SECONDS</div>
+                    </div>
+                </div>
+                <p class="countdown-text">Until DASFAA 2026 Conference</p>
+            </div>
+        </section>
+
         <section class="important-dates">
             <h2>Important Dates</h2>
-            <div class="date-card">
-                <h3><i class="fas fa-paper-plane"></i> Paper Submission Deadline</h3>
-                <p class="deadline">To be announced</p>
-                <p class="description">Submit your research papers through the conference submission system</p>
+            
+            <div class="paper-category">
+                <h3><i class="fas fa-microscope"></i> Research Papers</h3>
+                <div class="date-card">
+                    <h4><i class="fas fa-file-alt"></i> Abstract Submission</h4>
+                    <p class="deadline">October 20, 2025</p>
+                    <h4><i class="fas fa-paper-plane"></i> Paper Submission</h4>
+                    <p class="deadline">October 27, 2025</p>
+                    <h4><i class="fas fa-bell"></i> Acceptance Notification</h4>
+                    <p class="deadline">January 19, 2026</p>
+                    <h4><i class="fas fa-camera"></i> Camera-Ready Submission</h4>
+                    <p class="deadline">February 14, 2026</p>
+                </div>
             </div>
-            <div class="date-card">
-                <h3><i class="fas fa-bell"></i> Notification of Acceptance</h3>
-                <p class="deadline">To be announced</p>
-                <p class="description">Authors will be notified of paper acceptance decisions</p>
+
+            <div class="paper-category">
+                <h3><i class="fas fa-industry"></i> Industry Papers</h3>
+                <div class="date-card">
+                    <h4><i class="fas fa-paper-plane"></i> Paper Submission</h4>
+                    <p class="deadline">November 3, 2025</p>
+                    <h4><i class="fas fa-bell"></i> Acceptance Notification</h4>
+                    <p class="deadline">January 19, 2026</p>
+                    <h4><i class="fas fa-camera"></i> Camera-Ready Version</h4>
+                    <p class="deadline">February 14, 2026</p>
+                </div>
             </div>
-            <div class="date-card">
-                <h3><i class="fas fa-camera"></i> Camera-Ready Submission</h3>
-                <p class="deadline">To be announced</p>
-                <p class="description">Submit final camera-ready versions of accepted papers</p>
-            </div>
-            <div class="date-card">
-                <h3><i class="fas fa-ticket-alt"></i> Early Registration</h3>
-                <p class="deadline">To be announced</p>
-                <p class="description">Take advantage of early registration discounts</p>
-            </div>
-            <div class="date-card">
-                <h3><i class="fas fa-calendar-alt"></i> Conference Dates</h3>
-                <p class="deadline">To be announced</p>
-                <p class="description">Join us for the main conference program</p>
+
+            <div class="paper-category">
+                <h3><i class="fas fa-laptop-code"></i> Demo Papers</h3>
+                <div class="date-card">
+                    <h4><i class="fas fa-paper-plane"></i> Submission Due</h4>
+                    <p class="deadline">December 5, 2025</p>
+                    <h4><i class="fas fa-bell"></i> Acceptance Notification</h4>
+                    <p class="deadline">January 2, 2026</p>
+                    <h4><i class="fas fa-camera"></i> Camera-Ready Due</h4>
+                    <p class="deadline">January 30, 2026</p>
+                </div>
             </div>
         </section>
 
