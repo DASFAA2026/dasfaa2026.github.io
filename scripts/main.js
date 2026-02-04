@@ -29,14 +29,14 @@ function setRandomBackground() {
 document.addEventListener('DOMContentLoaded', setRandomBackground);
 
 // 페이지 전환 시에도 새로운 랜덤 배경 이미지 설정
-window.addEventListener('pageshow', function(event) {
+window.addEventListener('pageshow', function (event) {
     if (event.persisted) {
         setRandomBackground();
     }
 });
 
 // Swiper 초기화
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Get all slide images
     const slideImages = [
         '../assets/slide/spring-6008564_1280.jpg',
@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (swiperWrapper) {
             // Clear existing content
             swiperWrapper.innerHTML = '';
-            
+
             // Preload images
             const preloadImages = randomImages.map(src => {
                 return new Promise((resolve, reject) => {
@@ -144,22 +144,22 @@ document.addEventListener('DOMContentLoaded', function() {
 function initCountdown() {
     // Conference date: April 27, 2026, 9:00 AM Seoul time
     const conferenceDate = new Date('2026-04-27T09:00:00+09:00');
-    
+
     function updateCountdown() {
         // Get current time in Seoul timezone
         const now = new Date();
-        const seoulTime = new Date(now.toLocaleString("en-US", {timeZone: "Asia/Seoul"}));
-        
+        const seoulTime = new Date(now.toLocaleString("en-US", { timeZone: "Asia/Seoul" }));
+
         // Calculate the difference
         const timeDifference = conferenceDate.getTime() - seoulTime.getTime();
-        
+
         if (timeDifference > 0) {
             // Calculate days, hours, minutes, seconds
             const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
             const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
             const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
-            
+
             // Update the display with leading zeros
             document.getElementById('days').textContent = days.toString().padStart(3, '0');
             document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
@@ -171,7 +171,7 @@ function initCountdown() {
             document.getElementById('hours').textContent = '00';
             document.getElementById('minutes').textContent = '00';
             document.getElementById('seconds').textContent = '00';
-            
+
             // Update the text to show conference has started
             const countdownText = document.querySelector('.countdown-text');
             if (countdownText) {
@@ -179,18 +179,70 @@ function initCountdown() {
             }
         }
     }
-    
+
     // Initial call
     updateCountdown();
-    
+
     // Update every second
     setInterval(updateCountdown, 1000);
 }
 
-// Initialize countdown when DOM is loaded
-document.addEventListener('DOMContentLoaded', function() {
-    // Check if countdown elements exist (only on index page)
+// Check if countdown elements exist (only on index page) - Run immediately if DOM is already loaded or wait?
+// Since this script is deferred or at the end of body, we can just run it. 
+// However, to be safe, let's wrap it in DOMContentLoaded or just leave it if it was working before.
+// The previous code had it inside DOMContentLoaded. 
+// I will wrap it back in DOMContentLoaded to be safe and consistent.
+
+document.addEventListener('DOMContentLoaded', function () {
     if (document.getElementById('days')) {
         initCountdown();
     }
+});
+
+// Mobile Menu Toggle
+document.addEventListener('DOMContentLoaded', function () {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    const dropdowns = document.querySelectorAll('.dropdown');
+
+    if (menuToggle && navLinks) {
+        menuToggle.addEventListener('click', function () {
+            navLinks.classList.toggle('active');
+            // Change icon
+            const icon = menuToggle.querySelector('i');
+            if (navLinks.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+    }
+
+    // Mobile Dropdown Toggle
+    if (window.innerWidth <= 768) {
+        dropdowns.forEach(dropdown => {
+            const link = dropdown.querySelector('a');
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                dropdown.classList.toggle('active');
+            });
+        });
+    }
+
+    // Reset on resize
+    window.addEventListener('resize', function () {
+        if (window.innerWidth > 768) {
+            if (navLinks) navLinks.classList.remove('active');
+            dropdowns.forEach(dropdown => dropdown.classList.remove('active'));
+            if (menuToggle) {
+                const icon = menuToggle.querySelector('i');
+                if (icon) {
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                }
+            }
+        }
+    });
 }); 
