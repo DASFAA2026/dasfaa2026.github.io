@@ -1297,6 +1297,9 @@ footer {
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         padding: 1rem 0;
         z-index: 2000;
+        max-height: calc(100vh - 80px);
+        /* Adjust based on header height, assumed ~60-80px */
+        overflow-y: auto;
     }
 
     .nav-links.active {
