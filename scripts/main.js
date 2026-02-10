@@ -221,15 +221,23 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Mobile Dropdown Toggle
-    if (window.innerWidth <= 768) {
-        dropdowns.forEach(dropdown => {
-            const link = dropdown.querySelector('a');
+    dropdowns.forEach(dropdown => {
+        // Use the specific toggle trigger (anchor tag)
+        const link = dropdown.querySelector('a');
+        if (link) {
             link.addEventListener('click', function (e) {
-                e.preventDefault();
-                dropdown.classList.toggle('active');
+                // Only activate click toggle on mobile
+                if (window.innerWidth <= 768) {
+                    // Check if it's the main dropdown toggle link, not a submenu link
+                    // The main toggle is the first 'a' tag in .dropdown
+                    if (this === dropdown.querySelector('a')) {
+                        e.preventDefault();
+                        dropdown.classList.toggle('active');
+                    }
+                }
             });
-        });
-    }
+        }
+    });
 
     // Reset on resize
     window.addEventListener('resize', function () {
