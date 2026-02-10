@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="../styles/main.css">
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="../scripts/main.js?v=1.2"></script>
@@ -19,7 +21,8 @@
 <body class="organization">
     <header>
         <nav class="main-nav">
-            <div class="menu-toggle"><i class="fas fa-bars"></i></div><div class="logo">
+            <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+            <div class="logo">
                 <a href="../index.html">
                     <img src="../assets/img/logo.png" alt="DASFAA 2026">
                 </a>
@@ -118,10 +121,56 @@
         </section>
 
         <section class="registration">
-            <h2>Registration</h2>
-            <div class="coming-soon">
-                <h3>Coming Soon</h3>
-                <p>Registration information will be provided soon. Please check back later for updates.</p>
+            <h2>Registration Fees</h2>
+            <div class="registration-fees">
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="2">Category</th>
+                            <th>Early Bird<br>(~13th Apr.)</th>
+                            <th>Late/On-Site</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="category"><strong>Presenter</strong><br>(~28th of Feb.)</td>
+                            <td>Conf+Workshop</td>
+                            <td>USD $800<br>₩ 1,150,000</td>
+                            <td>USD $1,000<br>₩ 1,450,000</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2" class="category"><strong>Regular</strong></td>
+                            <td>Conf+Workshop</td>
+                            <td>USD $800<br>₩ 1,150,000</td>
+                            <td>USD $1,000<br>₩ 1,450,000</td>
+                        </tr>
+                        <tr>
+                            <td>Workshop Only</td>
+                            <td>USD $300<br>₩ 450,000</td>
+                            <td>USD $400<br>₩ 550,000</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2" class="category"><strong>Student</strong></td>
+                            <td>Conf+Workshop</td>
+                            <td>USD $500<br>₩ 700,000</td>
+                            <td>USD $600<br>₩ 850,000</td>
+                        </tr>
+                        <tr>
+                            <td>Workshop Only</td>
+                            <td>USD $180<br>₩ 250,000</td>
+                            <td>USD $200<br>₩ 300,000</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="category"><strong>Additional Banquet Coupon</strong></td>
+                            <td colspan="2" style="text-align: center;">USD $100 / ₩ 140,000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="registration-actions" style="margin-top: 3rem; text-align: center;">
+                <a href="https://public.thinkonweb.com/sites/dasfaa" class="button disabled" target="_blank"
+                    onclick="return false;">Register Now</a>
             </div>
         </section>
     </main>
@@ -129,21 +178,18 @@
     <footer>
         <div class="footer-content">
             <div class="footer-section">
-                <h3>Contact</h3>
-                <p>For inquiries, please refer to the <a href="../organization/organizing-committee.html">Organizing Committee</a> page and contact the responsible chair.</p>
-            </div>
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="registration.html">Registration</a></li>
-                    <li><a href="../program/overview.html">Program</a></li>
-                    <li><a href="social.html">Social Events</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
                 <div class="footer-logo">
                     <img src="../assets/img/logo.png" alt="DASFAA 2026" style="max-height: 80px; width: auto;">
                 </div>
+            </div>
+            <div class="footer-section">
+                <h3 style="font-size: 1.1rem; margin-bottom: 1rem;">[KIISE] Korean Institute of Information Scientists
+                    and Engineers</h3>
+                <p style="font-size: 0.9rem; margin-bottom: 0.5rem;">#401 Meorijae Bldg., 76, Bangbae-ro, Seocho-gu,
+                    Seoul 06704, Rep. of KOREA</p>
+                <p style="font-size: 0.9rem; margin-bottom: 0.5rem;">TEL: 02-588-9246(KOREA ONLY) / E-mail: <a
+                        href="mailto:hschoi@kiise.or.kr" style="color: inherit;">hschoi@kiise.or.kr</a></p>
+                <p style="font-size: 0.9rem;">Business Registration Number: 114-82-03170</p>
             </div>
         </div>
         <div class="footer-bottom">
@@ -153,6 +199,3 @@
 </body>
 
 </html>
-
-
-
