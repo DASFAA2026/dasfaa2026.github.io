@@ -173,6 +173,14 @@ header {
     max-width: 1000px;
 }
 
+.text-left {
+    text-align: left !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
 /* Main Content */
 main {
     margin-top: 0;
@@ -975,6 +983,7 @@ footer {
 .visa,
 .travel,
 .venue,
+.hotel-reservation,
 .social-events,
 .presenter-instructions,
 .faq-content {
@@ -986,6 +995,7 @@ footer {
 .visa h2,
 .travel h2,
 .venue h2,
+.hotel-reservation h2,
 .social-events h2,
 .presenter-instructions h2,
 .faq-content h2 {
@@ -1086,10 +1096,10 @@ footer {
     border-collapse: collapse;
     margin-bottom: 2rem;
     background-color: var(--white);
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-.info-table th, 
+.info-table th,
 .info-table td {
     padding: 1rem;
     border: 1px solid #e0e0e0;
