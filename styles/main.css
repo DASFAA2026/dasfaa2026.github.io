@@ -2667,3 +2667,129 @@ footer {
         font-size: 1.4rem;
     }
 }
+
+/* Program Specific Table Styling (Consistent with Overview) */
+.program-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    background-color: var(--white);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: table;
+    /* Reset for general usage */
+}
+
+.program-table th,
+.program-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+.program-table th {
+    background-color: #d1e7dd;
+    color: #0f5132;
+    font-weight: bold;
+}
+
+.program-table td {
+    vertical-align: middle;
+}
+
+.table-responsive {
+    overflow-x: auto;
+    width: 100%;
+    display: block;
+}
+
+/* Session Type Colors */
+.session-oral {
+    background-color: #fff3cd !important;
+}
+
+.session-plenary {
+    background-color: #d1e7dd !important;
+}
+
+.session-workshop {
+    background-color: #cfe2ff !important;
+}
+
+.session-panel {
+    background-color: #cff4fc !important;
+}
+
+/* Outline Section Styling */
+.outline-section {
+    background-color: #f8f9fa;
+    border-left: 5px solid var(--primary-color);
+    padding: 1.5rem;
+    border-radius: 0 8px 8px 0;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.outline-section h3 {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 0.5rem;
+}
+
+.outline-section p {
+    font-style: italic;
+    color: #6c757d;
+    margin-bottom: 1rem;
+}
+
+.outline-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.outline-list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #f1f1f1;
+    display: flex;
+    align-items: center;
+}
+
+.outline-list li:last-child {
+    border-bottom: none;
+}
+
+.outline-day-badge {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 0.85rem;
+    margin-right: 1rem;
+    min-width: 60px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .outline-list li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .outline-day-badge {
+        margin-bottom: 0.3rem;
+    }
+
+    .program-table {
+        font-size: 0.85rem;
+    }
+
+    .program-table th,
+    .program-table td {
+        padding: 8px;
+    }
+}
