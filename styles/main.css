@@ -2623,8 +2623,8 @@ footer {
 }
 
 .panel-image {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     overflow: hidden;
     border: 3px solid var(--primary-color);
@@ -2734,6 +2734,49 @@ footer {
 
 .session-panel {
     background-color: #cff4fc !important;
+}
+
+/* Program Booklet table colors */
+.wg-title {
+    background-color: #993300 !important;
+    color: #ffffff !important;
+}
+
+.wg-room {
+    background-color: #b3b3b3 !important;
+    color: #111111 !important;
+}
+
+.wg-opening {
+    background-color: #ffffeb !important;
+}
+
+.wg-workshop {
+    background-color: #ccccff !important;
+}
+
+.wg-break {
+    background-color: #ffffe6 !important;
+}
+
+.wg-keynote {
+    background-color: #ccff99 !important;
+}
+
+.wg-research {
+    background-color: #caedfb !important;
+}
+
+.wg-demo {
+    background-color: #a5c9eb !important;
+}
+
+.wg-poster {
+    background-color: #fae2d5 !important;
+}
+
+.wg-banquet {
+    background-color: #f2ceed !important;
 }
 
 /* Outline Section Styling */
