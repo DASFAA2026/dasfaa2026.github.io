@@ -2820,6 +2820,30 @@ footer {
     border-bottom: none;
 }
 
+.outline-list a {
+    color: #1f2937;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.3rem 0.8rem;
+    border-radius: 999px;
+    border: 1px solid #dbe4ee;
+    background: linear-gradient(135deg, #ffffff 0%, #f3f7fb 100%);
+    box-shadow: 0 2px 6px rgba(15, 23, 42, 0.08);
+    transition: all 0.2s ease;
+}
+
+.outline-list a:hover {
+    color: #0b3d6e;
+    border-color: #9ec5fe;
+    box-shadow: 0 6px 14px rgba(30, 64, 175, 0.16);
+    transform: translateY(-1px);
+}
+
+.outline-list a:focus-visible {
+    outline: 2px solid #3b82f6;
+    outline-offset: 2px;
+}
+
 .outline-day-badge {
     background-color: var(--primary-color);
     color: white;
