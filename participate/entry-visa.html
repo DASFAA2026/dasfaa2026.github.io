@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hotel Reservation - DASFAA 2026</title>
+    <title>Entry & Visa Information - DASFAA 2026</title>
     <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -14,6 +14,25 @@
         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../styles/main.css">
+    <style>
+        .entry-visa .venue-description {
+            max-width: 100%;
+            text-align: left;
+            margin: 0 0 2rem;
+        }
+
+        .entry-visa .venue-description h3 {
+            text-align: left;
+        }
+
+        .entry-visa .venue-info-grid {
+            margin-bottom: 2.5rem;
+        }
+
+        .entry-visa .info-card p {
+            text-align: left;
+        }
+    </style>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="../scripts/main.js?v=1.2"></script>
 </head>
@@ -34,8 +53,8 @@
                     <ul class="dropdown-content">
                         <li><a href="../organization/steering-committee.html"><i class="fas fa-user-tie"></i> Steering
                                 Committee</a></li>
-                        <li><a href="../organization/organizing-committee.html"><i class="fas fa-user-graduate"></i>
-                                Organizing Committee</a></li>
+                        <li><a href="../organization/organizing-committee.html"><i
+                                    class="fas fa-user-graduate"></i> Organizing Committee</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
@@ -87,16 +106,13 @@
                     <ul class="dropdown-content">
                         <li><a href="../participate/registration.html"><i class="fas fa-clipboard-list"></i>
                                 Registration</a></li>
-                        <li><a href="https://public.thinkonweb.com/sites/dasfaa/payment/payment-history-check"
-                                target="_blank"><i class="fas fa-clipboard-check"></i> Registration Confirmation</a>
+                        <li><a href="../participate/entry-visa.html" class="active"><i class="fas fa-passport"></i> Entry & Visa Information</a></li>
+                        <li><a href="https://public.thinkonweb.com/sites/dasfaa/payment/payment-history-check" target="_blank"><i class="fas fa-clipboard-check"></i> Registration Confirmation</a>
                         </li>
-                        <li><a href="https://forms.gle/L64VS4pSdFpAybXG8" target="_blank"><i
-                                    class="fas fa-envelope-open-text"></i> Invitation Letter</a></li>
-                        <li><a href="../participate/entry-visa.html"><i class="fas fa-passport"></i> Entry & Visa Information</a></li>
-                        <li><a href="../participate/hotel-reservation.html" class="active"><i class="fas fa-hotel"></i>
-                                Hotel Reservation</a></li>
-                        <li><a href="../participate/travel.html"><i class="fas fa-plane"></i> Travel Information</a>
-                        </li>
+                        <li><a href="https://forms.gle/L64VS4pSdFpAybXG8" target="_blank"><i class="fas fa-envelope-open-text"></i> Invitation Letter</a></li>
+                        <li><a href="../participate/hotel-reservation.html"><i class="fas fa-hotel"></i> Hotel
+                                Reservation</a></li>
+                        <li><a href="../participate/travel.html"><i class="fas fa-plane"></i> Travel Information</a></li>
                         <li><a href="../participate/venue.html"><i class="fas fa-map-marker-alt"></i> Conference
                                 Venue</a></li>
                         <li><a href="../participate/social.html"><i class="fas fa-glass-cheers"></i> Social Events</a>
@@ -117,50 +133,101 @@
                     <div class="swiper-slide">
                         <img src="../assets/slide/jeju-1529843_1280.jpg" alt="Jeju Island">
                     </div>
+                    <div class="swiper-slide">
+                        <img src="../assets/slide/jeju-1529845_1280.jpg" alt="Jeju Island">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../assets/slide/jeju-934479_1280.jpg" alt="Jeju Island">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../assets/slide/jeju-2748095_1280.jpg" alt="Jeju Island">
+                    </div>
                 </div>
             </div>
             <div class="overlay"></div>
-            <h1>Hotel Reservation</h1>
+            <h1>Entry & Visa Information</h1>
         </section>
-
-        <section class="hotel-reservation">
+        <section class="travel entry-visa">
             <div class="venue-content">
                 <div class="venue-description">
-                    <h2>Accommodation Reservation</h2>
-                    <p class="text-left" style="margin-bottom: 2rem; line-height: 1.6;">
-                        DASFAA 2026 will be held at <strong>Jeju Shinhwa World</strong>, which offers four distinct
-                        hotel options for your comfortable stay.
-                        You can choose from <strong>Landing</strong>, <strong>Shinhwa</strong>,
-                        <strong>Marriott</strong>, and <strong>Somerset</strong>, depending on your preference.
-                        Please select one of the hotels below to proceed with your reservation.
+                    <h3><i class="fas fa-passport"></i> Entry Requirements Overview</h3>
+                    <p class="text-left">
+                        DASFAA 2026 will be held in Jeju Island, Republic of Korea. Jeju operates a visa-free entry
+                        program for many foreign visitors, but entry requirements may vary by nationality, itinerary,
+                        and port of entry.
                     </p>
+                    <ul class="text-left" style="margin-top: 1rem; list-style-position: inside;">
+                        <li><strong>K-ETA:</strong> Some visa-free travelers must apply before departure.</li>
+                        <li><strong>Official K-ETA site:</strong> <a href="https://www.k-eta.go.kr"
+                                target="_blank">https://www.k-eta.go.kr</a></li>
+                    </ul>
+                </div>
 
-                    <div class="venue-info-grid">
-                        <div class="info-card">
-                            <i class="fas fa-map-marked-alt"></i>
-                            <h4>Landing</h4>
-                            <a href="https://reservation.shinhwaworld.com/Booking/Reservation.aspx?pid=1&hid=15&cin=24-Apr-2026&cout=25-Apr-2026&rq=1&aq=1&cq=0&rc=4&pcd=JEJUCVB"
-                                class="button" target="_blank">Book Now</a>
-                        </div>
-                        <div class="info-card">
-                            <i class="fas fa-hotel"></i>
-                            <h4>Shinhwa</h4>
-                            <a href="https://reservation.shinhwaworld.com/Booking/Reservation.aspx?pid=1&hid=17&cin=24-Apr-2026&cout=25-Apr-2026&rq=1&aq=1&cq=0&rc=4&pcd=JEJUCVB"
-                                class="button" target="_blank">Book Now</a>
-                        </div>
-                        <div class="info-card">
-                            <i class="fas fa-concierge-bell"></i>
-                            <h4>Marriott</h4>
-                            <a href="https://reservation.shinhwaworld.com/Booking/Reservation.aspx?pid=1&hid=16&cin=24-Apr-2026&cout=25-Apr-2026&rq=1&aq=1&cq=0&rc=4&pcd=DASFAA&lang=en-US"
-                                class="button" target="_blank">Book Now</a>
-                        </div>
-                        <div class="info-card">
-                            <i class="fas fa-building"></i>
-                            <h4>Somerset</h4>
-                            <a href="https://reservation.shinhwaworld.com/Booking/Reservation.aspx?pid=1&hid=14&cin=24-Apr-2026&cout=25-Apr-2026&rq=1&aq=1&cq=0&rc=4&pcd=JEJUCVB&lang=en-US"
-                                class="button" target="_blank">Book Now</a>
-                        </div>
+                <div class="venue-info-grid">
+                    <div class="info-card">
+                        <i class="fas fa-plane-arrival"></i>
+                        <h4>Direct Arrival to Jeju</h4>
+                        <p class="text-left">
+                            Travelers arriving directly from overseas to Jeju International Airport may enter under the
+                            Jeju visa-free program (up to 30 days), subject to nationality and immigration rules.
+                        </p>
                     </div>
+                    <div class="info-card">
+                        <i class="fas fa-exchange-alt"></i>
+                        <h4>Entry via Mainland Korea</h4>
+                        <p class="text-left">
+                            If you enter Korea through another airport (for example Incheon or Gimpo) and then travel
+                            to Jeju, standard Korean entry requirements apply (K-ETA or visa as applicable).
+                        </p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <h4>Mainland Visit After Jeju</h4>
+                        <p class="text-left">
+                            If you plan to visit mainland Korea after entering Jeju under visa-free rules, additional
+                            visa or entry authorization may be required.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="venue-description">
+                    <h3><i class="fas fa-route"></i> Example Travel Scenarios</h3>
+                </div>
+                <div class="venue-info-grid">
+                    <div class="info-card">
+                        <i class="fas fa-plane-departure"></i>
+                        <h4>Tokyo to Jeju (Direct)</h4>
+                        <p class="text-left">
+                            Potentially eligible for Jeju visa-free entry depending on nationality.
+                            K-ETA may still be required in some cases.
+                        </p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-plane"></i>
+                        <h4>Paris to Incheon to Jeju</h4>
+                        <p class="text-left">
+                            Standard Korean entry requirements apply when entering via mainland Korea.
+                            Prepare K-ETA or visa based on your passport.
+                        </p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-id-card"></i>
+                        <h4>Jeju First, Mainland Later</h4>
+                        <p class="text-left">
+                            Verify in advance whether onward travel to mainland Korea is permitted under your entry
+                            status and whether extra authorization is needed.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="venue-description" style="margin-top: 1rem;">
+                    <h3><i class="fas fa-check-circle"></i> Before You Travel</h3>
+                    <ul class="text-left" style="margin-top: 1rem; list-style-position: inside;">
+                        <li>Check your latest eligibility with official immigration guidance before booking.</li>
+                        <li>Confirm airline boarding requirements for K-ETA or visa documentation.</li>
+                        <li>Use official sources only for policy updates: <a href="https://www.k-eta.go.kr"
+                                target="_blank">https://www.k-eta.go.kr</a>.</li>
+                    </ul>
                 </div>
             </div>
         </section>
