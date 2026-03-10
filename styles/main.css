@@ -205,6 +205,16 @@ main>section:last-child {
     margin-bottom: 0;
 }
 
+/* Alert/notice box styling for important messages */
+.alert {
+    background-color: #ffe6e6;
+    border-left: 4px solid #e53935;
+    color: #b71c1c;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+}
+
 main>section h2 {
     color: var(--primary-color);
     margin-bottom: 1.5rem;
