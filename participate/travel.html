@@ -14,6 +14,82 @@
         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../styles/main.css">
+    <style>
+        .travel-page .venue-description {
+            max-width: 100%;
+            text-align: left;
+            margin: 0 0 3rem;
+        }
+
+        .travel-page .venue-description h3 {
+            text-align: left;
+        }
+
+        .travel-page .schedule-table-wrap {
+            width: 100%;
+            overflow-x: auto;
+            margin-bottom: 1rem;
+        }
+
+        .travel-page .schedule-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.25rem;
+            align-items: start;
+        }
+
+        .travel-page .schedule-block h4 {
+            color: var(--dark-gray);
+            margin: 0 0 0.75rem;
+        }
+
+        .travel-page .bus-highlight {
+            display: inline-block;
+            padding: 0.45rem 0.75rem;
+            margin-bottom: 0.85rem;
+            border-radius: 6px;
+            background: #fff4e8;
+            border: 1px solid #f0c48a;
+            color: #9a4a00;
+            font-weight: 800;
+            letter-spacing: 0.2px;
+        }
+
+        .travel-page .schedule-table {
+            width: 100%;
+            min-width: 320px;
+            margin-bottom: 0;
+        }
+
+        .travel-page .schedule-table th,
+        .travel-page .schedule-table td {
+            text-align: center;
+        }
+
+        .travel-page .schedule-table thead tr:first-child th {
+            background-color: var(--primary-color);
+            color: var(--white);
+            font-weight: 700;
+        }
+
+        .travel-page .schedule-table thead tr:nth-child(2) th {
+            background-color: #eaf2ff;
+            color: var(--primary-color);
+            font-weight: 700;
+        }
+
+        @media (max-width: 768px) {
+            .travel-page .schedule-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .travel-page .schedule-table th,
+            .travel-page .schedule-table td {
+                padding: 0.75rem;
+            }
+        }
+    </style>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="../scripts/main.js?v=1.2"></script>
 </head>
@@ -129,7 +205,7 @@
             <h1>Travel Information</h1>
         </section>
 
-        <section class="travel">
+        <section class="travel travel-page">
             <div class="venue-content">
                 <!-- Visa Section -->
                 <div class="venue-description">
@@ -216,6 +292,80 @@
                                 recommended. International Driving Permit (IDP) is required.
                             </p>
                         </div>
+                    </div>
+
+                    <div class="text-left" style="margin-top: 1rem;">
+                        <h4 class="bus-highlight">Bus 151 (Express)</h4>
+                        <p>
+                            <strong>Departure:</strong> Gate 4, 1st Floor, Jeju International Airport<br>
+                            <strong>Travel Time:</strong> Approximately 50-60 minutes depending on traffic
+                        </p>
+
+                        <div class="schedule-grid">
+                            <div class="schedule-block">
+                                <div class="schedule-table-wrap">
+                                    <table class="info-table schedule-table">
+                                        <thead>
+                                            <tr>
+                                                <th colspan="2">Airport → Jeju Shinhwa World</th>
+                                            </tr>
+                                            <tr>
+                                                <th style="width: 50%;">Time</th>
+                                                <th style="width: 50%;">Time</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr><td>06:50</td><td>07:20</td></tr>
+                                            <tr><td>08:00</td><td>08:40</td></tr>
+                                            <tr><td>09:10</td><td>10:00</td></tr>
+                                            <tr><td>11:00</td><td>11:35</td></tr>
+                                            <tr><td>12:20</td><td>13:10</td></tr>
+                                            <tr><td>14:00</td><td>14:30</td></tr>
+                                            <tr><td>15:10</td><td>15:50</td></tr>
+                                            <tr><td>16:30</td><td>17:10</td></tr>
+                                            <tr><td>18:20</td><td>19:00</td></tr>
+                                            <tr><td>19:40</td><td>20:20</td></tr>
+                                            <tr><td>20:50</td><td>21:45</td></tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="schedule-block">
+                                <div class="schedule-table-wrap">
+                                    <table class="info-table schedule-table">
+                                        <thead>
+                                            <tr>
+                                                <th colspan="2">Jeju Shinhwa World → Airport</th>
+                                            </tr>
+                                            <tr>
+                                                <th style="width: 50%;">Time</th>
+                                                <th style="width: 50%;">Time</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr><td>06:34</td><td>07:26</td></tr>
+                                            <tr><td>08:21</td><td>08:56</td></tr>
+                                            <tr><td>09:26</td><td>10:11</td></tr>
+                                            <tr><td>10:36</td><td>11:36</td></tr>
+                                            <tr><td>12:16</td><td>13:11</td></tr>
+                                            <tr><td>13:46</td><td>14:36</td></tr>
+                                            <tr><td>15:36</td><td>16:21</td></tr>
+                                            <tr><td>16:46</td><td>17:16</td></tr>
+                                            <tr><td>17:56</td><td>18:46</td></tr>
+                                            <tr><td>19:31</td><td>20:26</td></tr>
+                                            <tr><td>21:06</td><td>21:46</td></tr>
+                                            <tr><td>22:26</td><td></td></tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p style="margin-top: 0.5rem;">
+                            <strong>Note:</strong> Bus schedules may change depending on operating conditions.<br>
+                            For updated information, please refer to the Jeju Bus Information System:
+                            <a href="http://www.bus.jeju.go.kr" target="_blank">http://www.bus.jeju.go.kr</a>
+                        </p>
                     </div>
                 </div>
 

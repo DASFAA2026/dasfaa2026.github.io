@@ -14,6 +14,94 @@
         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../styles/main.css">
+
+        <style>
+        .session-details {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .session-booklet {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.25rem;
+        }
+
+        .time-slot {
+            background: #fff;
+            border: 1px solid #e6e6e6;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+        }
+
+        .slot-header {
+            margin: 0;
+            padding: 0.85rem 1rem;
+            background: linear-gradient(90deg, #f08a00, #ffad33);
+            color: #fff;
+            font-size: 1rem;
+            letter-spacing: 0.2px;
+        }
+
+        .slot-body {
+            padding: 0.9rem 1rem;
+        }
+
+        .slot-lines {
+            margin: 0;
+            padding-left: 1.1rem;
+        }
+
+        .slot-lines li {
+            margin-bottom: 0.4rem;
+            line-height: 1.45;
+            color: #222;
+        }
+
+        .slot-lines .line-title {
+            list-style: none;
+            margin-left: -1.1rem;
+            margin-top: 1.55rem;
+            margin-bottom: 0.75rem;
+            font-weight: 700;
+            color: #0f2e63;
+            border-left: 3px solid #0f2e63;
+            padding-left: 0.5rem;
+        }
+
+        .slot-lines .line-title:first-child {
+            margin-top: 0.35rem;
+        }
+
+        .slot-lines .line-meta {
+            list-style: none;
+            margin-left: -1.1rem;
+            margin-bottom: 0.75rem;
+            color: #555;
+            font-size: 0.94rem;
+        }
+
+        .slot-lines .line-paper {
+            margin-top: 0.65rem;
+        }
+
+        .slot-lines .line-authors {
+            color: #555;
+            font-size: 0.92rem;
+            margin-top: 0.15rem;
+        }
+
+        @media (max-width: 768px) {
+            .slot-header {
+                font-size: 0.92rem;
+            }
+
+            .slot-body {
+                padding: 0.8rem;
+            }
+        }
+    </style>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="../scripts/main.js?v=1.2"></script>
 </head>
@@ -129,9 +217,622 @@
 
         <section class="session-details">
             <h2>Session Details</h2>
-            <div class="coming-soon">
-                <h3>Coming Soon</h3>
-                <p>Detailed session information will be provided soon. Please check back later for updates.</p>
+            <div class="session-booklet">
+                <article class="time-slot">
+                    <h3 class="slot-header">MONDAY 8:00 – 8:30</h3>
+                    <div class="slot-body">
+                        <ul class="slot-lines">
+<li class='line-title'>Registration</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="time-slot">
+                    <h3 class="slot-header">MONDAY 8:30 – 12:15</h3>
+                    <div class="slot-body">
+                        <ul class="slot-lines">
+<li class='line-title'>Workshop: DI 2026 (The 2nd Data Intelligence Workshop)</li>
+<li class='line-meta'>Location: Ballroom C</li>
+<li class='line-title'>Workshop: BDMS 2026 (The 12th International Workshop on Big Data Management and Service)</li>
+<li class='line-meta'>Location: Halla A</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="time-slot">
+                    <h3 class="slot-header">MONDAY 13:45 – 18:00</h3>
+                    <div class="slot-body">
+                        <ul class="slot-lines">
+<li class='line-title'>Workshop: DI 2026 (The 2nd Data Intelligence Workshop)</li>
+<li class='line-meta'>Location: Ballroom C</li>
+<li class='line-title'>Workshop: BDMS 2026 (The 12th International Workshop on Big Data Management and Service)</li>
+<li class='line-meta'>Location: Halla A</li>
+<li class='line-title'>Workshop: GDMA 2026 (The 10th International Workshop on Graph Data Management and Analysis)</li>
+<li class='line-meta'>Location: Halla B</li>
+<li class='line-title'>Tutorial 1</li>
+<li class='line-meta'>Location: Halla C</li>
+<li>Continual Recommender Systems</li>
+<li>Seunghan Lee (Korea University), Seunghyun Baek (Korea University), Dojun Hwang (Korea University), Hyunsik Yoo (University of Illinois Urbana-Champaign), SeongKu Kang (Korea University)</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="time-slot">
+                    <h3 class="slot-header">MONDAY 18:00 – 20:00</h3>
+                    <div class="slot-body">
+                        <ul class="slot-lines">
+<li class='line-title'>Welcome Reception</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="time-slot">
+                    <h3 class="slot-header">TUESDAY 8:00 – 8:30</h3>
+                    <div class="slot-body">
+                        <ul class="slot-lines">
+<li class='line-title'>Main Conference Opening Ceremony</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="time-slot">
+                    <h3 class="slot-header">TUESDAY 8:30 – 9:30</h3>
+                    <div class="slot-body">
+                        <ul class="slot-lines">
+<li class='line-title'>Keynote Address 1</li>
+<li class='line-meta'>Location: Ballroom C</li>
+<li class='line-meta'>Session Chair: TBD</li>
+<li>A Wakeup Call: The SSD Isn&#39;t the Bottleneck, We Are</li>
+<li>Viktor Leis (Technical University of Munich)</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="time-slot">
+                    <h3 class="slot-header">TUESDAY 9:30 – 10:45</h3>
+                    <div class="slot-body">
+                        <ul class="slot-lines">
+<li class='line-title'>Research 1: Search and Recommendation (1)</li>
+<li class='line-meta'>Location: Ballroom C</li>
+<li class='line-meta'>Session Chair: TBD</li>
+<li class='line-paper'><strong>868 - GeoPhrase Tree: An Efficient Index for Frequent Phrase Query over Spatio-Temporal Ranges</strong><div class='line-authors'>wu, chenning; Lu, Chang; Jing, Yinan*; He, Zhenying; Yang, Zhihui; Wang, X.Sean</div></li>
+<li class='line-paper'><strong>181 - Cluster-Guided Disentangled Representation for Cold-Start Cross-Domain Recommendation</strong><div class='line-authors'>Yu, Huping*; Wang, Yuhan; Xie, Qing; Tang, Mengzi; Li, Lin; Liu, Yongjian</div></li>
+<li class='line-paper'><strong>527 - Causal Cross-Domain Sequential Recommendation with Preference Evolution</strong><div class='line-authors'>Ma, Jiaxuan*; Kou, Yue; Li, Dong; Shen, Derong; Zhou, Xiangmin; Nie, Tiezheng</div></li>
+<li class='line-paper'><strong>607 - A Syntax-Aware Dependency Parsing Framework for Mitigating Noisy Correspondence in Text-Based Person Search</strong><div class='line-authors'>Yuan, Xinpan; Gan, Wenguang*; Chen, Yuqi; Xie, Shaomin; He, Jiawei; Hua, Liujie</div></li>
+<li class='line-paper'><strong>836 - Efficient Personalized Reranking with Semi-Autoregressive Generation and Online Knowledge Distillation</strong><div class='line-authors'>Cheng, Kai; Wang, Hao*; Guo, Wei; Liu, Weiwen; Liu, Yong; Li, Yawen; Chen, Enhong</div></li>
+<li class='line-title'>Research 2: Graph and Social Network (1)</li>
+<li class='line-meta'>Location: Halla A</li>
+<li class='line-meta'>Session Chair: TBD</li>
+<li class='line-paper'><strong>269 - Beyond Similar Information: A Distinction-Preserving Framework for Graph Autoencoders</strong><div class='line-authors'>ge, chen*; yulan, hu; sheng, ouyang; cuicui, luo</div></li>
+<li class='line-paper'><strong>514 - NK-GAD: Neighbor Knowledge-Enhanced Unsupervised Graph Anomaly Detection</strong><div class='line-authors'>Wang, Zehao; Wang, Lanjun*</div></li>
+<li class='line-paper'><strong>789 - DRDGRL: Dual-Relational Dynamic Graph Representation Learning for Delay-Sensitive Stock Trend Prediction</strong><div class='line-authors'>You, Mingjie*; Chen, Kaijie; Cheng, Dawei</div></li>
+<li class='line-paper'><strong>894 - PVGCL: Graph Contrastive Learning with  Purified View Modeling for Spurious Link  Detection</strong><div class='line-authors'>Xue, Jinfang; Hong, Yifan; Yang, Ruohan; Wang, Ling; Li, Bo; Wang, Huan*</div></li>
+<li class='line-paper'><strong>927 - Node Anomaly Detection via Multiscale Time-Frequency Fusion and Hidden Markov Generations in Complex Networks</strong><div class='line-authors'>Hong, Yifan; Luo, Jiao*</div></li>
+<li class='line-title'>Research 3: Bio and Health Informatics (1)</li>
+<li class='line-meta'>Location: Halla B</li>
+<li class='line-meta'>Session Chair: TBD</li>
+<li class='line-paper'><strong>288 - IncepFold: A Deep Learning Framework for 3D Genome Prediction in Diverse Plant Species</strong><div class='line-authors'>Li, Lu; Shen, Hao*; Liu, Xinyuan; Deng, Pengcheng; Wang, Zhengchang; Wang, Maojun; Zhang, Zeyu</div></li>
+<li class='line-paper'><strong>302 - A Cross-Modal Hierarchical Contrastive Learning Framework for Protein-Protein Interaction Prediction</strong><div class='line-authors'>Zhang, Ran*; Wang, Yihong; Wang, Xuezhi; Long, Qingqing; Zhao, Jianghua; Xiao, Meng</div></li>
+<li class='line-paper'><strong>436 - BioLemons: Latent Conditional Diffusion Model with VAE Embedding for Enhancing Spatial Transcriptomics</strong><div class='line-authors'>Zhou, Haolu; He, Wenying*; Bai, Yude; Guo, Fei</div></li>
+<li class='line-paper'><strong>705 - COAT-GNN: Cooperative Attribute Learning and Topological Optimization for Protein-Protein Interaction Sites Prediction</strong><div class='line-authors'>wang, zhe*; Tang, Rongfan; Wang, Chenglin; Chen, Jingyang; Liu, Danlin; Zhao, Hongbo; Zhang, Jie ; Li, Honglin; Zhang, Kai</div></li>
+<li class='line-paper'><strong>948 - SparseDNA: Efficient Genomic Sequence Modeling via Sparse Experts in State Spaces</strong><div class='line-authors'>Xie, Zhehan*; Han, Ping; Lin, Chen</div></li>
+<li class='line-title'>Research 4: Query Processing and Optimization</li>
+<li class='line-meta'>Location: Halla C</li>
+<li class='line-meta'>Session Chair: TBD</li>
+<li class='line-paper'><strong>138 - Online Estimation of Weighted Reachability Between Vertex Pairs with Edge Similarity Decay in Temporal Interaction Graphs</strong><div class='line-authors'>He, Liukun; Xiao, Qingjun*; Chen, Hang; Zhang, Jiaming; Ma, Jun</div></li>
+<li class='line-paper'><strong>458 - Can Vision-Based Pretrained Models Help with Time Series Similarity Search under Elastic Distances?</strong><div class='line-authors'>Zhang, Haowen*</div></li>
+<li class='line-paper'><strong>591 - Diversified Top-k Optimal Routes with Collective Spatial Keywords in Road Networks</strong><div class='line-authors'>an, qiulin; li, jiajia; song, yang*; li, lei; chen, chengcheng; ding, linlin</div></li>
+<li class='line-paper'><strong>748 - TGA: Efficient Trajectory Approximate Top-k Query With High Precision</strong><div class='line-authors'>Liu, Fengyi*; Zhang, Kai; Jing, Yinan; He, Zhenying; Wang, X.Sean</div></li>
+<li class='line-paper'><strong>757 - SecKQL-Agent: A Real-World APT29 Events Benchmark and Framework for Reliable Text-to-KQL in Security Analytics</strong><div class='line-authors'>Zhang, Huan*; Wang, Haiyan; Long, Shaofang; Tan, Hao; Wang, Ziyu; Gu, Zhaoquan; Jia, Yan</div></li>
+<li class='line-title'>Tutorial 2</li>
+<li class='line-meta'>Location: Saebyeol</li>
+<li>Efficient Compression and Queries of Large Graphs</li>
+<li>Fan Zhang (Guangzhou University), Qingshuai Feng (Great Bay University), Kai Wang (Shanghai Jiao Tong University)</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="time-slot">
+                    <h3 class="slot-header">TUESDAY 11:00 – 12:15</h3>
+                    <div class="slot-body">
+                        <ul class="slot-lines">
+<li class='line-title'>Research 5: Search and Recommendation (2)</li>
+<li class='line-meta'>Location: Ballroom C</li>
+<li class='line-meta'>Session Chair: TBD</li>
+<li class='line-paper'><strong>219 - GBCG: Granular Ball and Counterfactual Guided  Profile Injection Attack in Recommender Systems</strong><div class='line-authors'>Zhao, Yunmeng; He, Yuran; Yu, Shenbao; Huang, Ruihong; Li, Jiayin; Shen, Jun; Lin, Jiayin*</div></li>
+<li class='line-paper'><strong>299 - RICE: Enhancing Transparency in Recommendation via Interaction-based Counterfactual Explanations</strong><div class='line-authors'>Liu, Shiqin*; Zhao, Minjun; Bu, Jiajun</div></li>
+<li class='line-paper'><strong>560 - Inter-Attribute Semantic Correlation-Guided Federated Recommender System Against Attribute Inference Attacks</strong><div class='line-authors'>Gu, Qiwen; Zhao, Xuhao; Zhu, YanMin*; Ma, Wenze; Yu, Jiadi; Tang, Feilong</div></li>
+<li class='line-paper'><strong>577 - A Cognitive Distribution and Behavior-Consistent Framework for Black-Box Attacks on Recommender Systems</strong><div class='line-authors'>Zhang, Hongyue*; Li, Mingming; Liu, Dongqin; Wang, Hui; Zhang, Yaning; Zhou, Xi; Lv, Honglei; Dai, Jiao; Han, Jizhong</div></li>
+<li class='line-paper'><strong>791 - Mitigating Popularity Bias for Two-sided Fairness via Dual-Teacher Distillation in Recommendation</strong><div class='line-authors'>Guo, Chao; Wang, Xuemin*; Zhu, Chuangying; Liang, Jialung; Yang, Heng; Chang, Liang</div></li>
+<li class='line-title'>Research 6: Graph and Social Network (2)</li>
+<li class='line-meta'>Location: Halla A</li>
+<li class='line-meta'>Session Chair: TBD</li>
+<li class='line-paper'><strong>19 - Graph Clustering with Scalable Graph Filters and View-specific Semantic Fusion</strong><div class='line-authors'>Zhang, Wenxin; Xuan, Xi; Han, Renda; Wu, Desheng; Luo, Cuicui*; Kocarev, Ljupco</div></li>
+<li class='line-paper'><strong>313 - DGTC: Dynamic Graph Transformer for Graph-Level Classification</strong><div class='line-authors'>Wang, Zhe*; Chen, Jiawei; Zhou, Sheng; Jin, Canhong; Chen, Chun; Wang, Can</div></li>
+<li class='line-paper'><strong>82 - MACA: Multimodal Aspect-Based Sentiment Analysis with Dynamic Adaptive Attention, Contrastive Alignment, and LLM Augmentation</strong><div class='line-authors'>Xu, Xuelin*; Lu, Jun</div></li>
+<li class='line-paper'><strong>603 - DynSpectral: A Multi-Channel Temporal Spectral GNN with Frequency Decomposition for Dynamic Graphs</strong><div class='line-authors'>tao, rungun*; 	Li, 	Tianpeng; Shao, 	Minglai; 	Wang, 	Wenjun; Guo, Xuan; Sun, Yueheng</div></li>
+<li class='line-paper'><strong>771 - Not All Neighbors are Temporally Relevant: An Adaptive Neighborhood Aggregation Framework for Dynamic Graph Embedding</strong><div class='line-authors'>Wang, Bingce*; Li, Weiping;  Mo, Tong; Yuan, Xiang; Chu, Xu; Zhang, Liwen</div></li>
+<li class='line-title'>Research 7: RDF and Knowledge Graphs</li>
+<li class='line-meta'>Location: Halla B</li>
+<li class='line-meta'>Session Chair: TBD</li>
+<li class='line-paper'><strong>55 - Knowledge Graph Completion via Centroid-driven Adaptive Type Information Capture Graph Attention Network</strong><div class='line-authors'>Yu, Ruiguo; Pan, Shuyu; Zhao, Mankun; Xu, Tianyi; Guo, Jiujiang; Yu, Jian; Yu, Mei*</div></li>
+<li class='line-paper'><strong>159 - Temporal Homogeneous and Heterogeneous Knowledge Joint Representation Driven by Lie Group</strong><div class='line-authors'>Yu, Mei; Zhang, Mengyi; Zhao, Mankun; Xu, Tianyi; Guo, Jiujiang; Li, Xuewei; Yu, Jian; Yu, Ruiguo*</div></li>
+<li class='line-paper'><strong>261 - Decomposing Complexity: A Difficulty-Aware Multi-Agent Framework for Open-Domain Knowledge Graph Construction</strong><div class='line-authors'>Chen, Haoyang*; Liu, Yi; Li, Chenyang; Hu, Wei</div></li>
+<li class='line-paper'><strong>804 - MN-Cascade: Multi-hop Neighborhood-Aware Cascaded Reasoning for Knowledge Graph Completion</strong><div class='line-authors'>XIDONG, YI*; Cai, Weishan; Ma, Wenjun</div></li>
+<li class='line-paper'><strong>644 - DIAL-KG: Schema-Free Incremental Knowledge Graph Construction via Dynamic Schema Induction and Evolution-Intent Assessment</strong><div class='line-authors'>Bao, Weidong *; Wang, Yilin; Gao, Ruyu; Leng, Fangling; Bao, Yubin; Yu, Ge</div></li>
+<li class='line-title'>Research 8: Security, Privacy and Trust (1)</li>
+<li class='line-meta'>Location: Halla C</li>
+<li class='line-meta'>Session Chair: TBD</li>
+<li class='line-paper'><strong>81 - Buster: Implanting Semantic Backdoor into Text Encoder to Mitigate NSFW Content Generation</strong><div class='line-authors'>Zhao, Xin*; Chen, Xiaojun; Xuan, Yuexin; Zhao, Zhendong; Li, Xinfeng; Jia, Xiaojun; Wang, Xiaofeng</div></li>
+<li class='line-paper'><strong>694 - WISP: A Stealthy Word-level Backdoor Attack via Semantic Influence and LLM-Guided Injection</strong><div class='line-authors'>Feng, Zhaoxi*; Liu, Zhengshuo; Wu, Zhengxian; Wen, Juan</div></li>
+<li class='line-paper'><strong>787 - Directional Flow Graph Framework for Detecting Known and Unknown Malicious Traffic</strong><div class='line-authors'>Wu, Yang*; Wang, Ruijia; Zang, Mingyuan; Wu, Jie</div></li>
+<li class='line-paper'><strong>851 - PG-MoE: Provenance-based Intrusion Detection via Graph Mixture-of-Experts and Spatio-Temporal Contrastive Learning</strong><div class='line-authors'>Qiu, Xuebo*; Lv, Mingqi; Zhang, Yimei; Song, Qijie; Chen, Tieming</div></li>
+<li class='line-paper'><strong>92 - zkNAS: Secure and Efficient Outsourced-NAS with Zero-Cost Proxies</strong><div class='line-authors'>Wang, Haodi*; Zhang, Danyang; Jiang, Tangyu; Wang, Danyang; Guo, Fangda; Wang, Jing; Guo, Yu</div></li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="time-slot">
+                    <h3 class="slot-header">TUESDAY 13:45 – 15:15</h3>
+                    <div class="slot-body">
+                        <ul class="slot-lines">
+<li class='line-title'>Research 9: Search and Recommendation (3)</li>
+<li class='line-meta'>Location: Ballroom C</li>
+<li class='line-meta'>Session Chair: TBD</li>
+<li class='line-paper'><strong>83 - CAMeRA: A Mamba-based Context-aware Adaptive Multimodal Architecture for Sequential Recommendation</strong><div class='line-authors'>Hu, Bohan*; Li, Yuhang; Cheng, Beijia</div></li>
+<li class='line-paper'><strong>86 - Improving Question Recommendation through Oracle Recommendation Imitation</strong><div class='line-authors'>Liu, Haipeng*; Long, Ting; Shan, Yixiang; Yin, Liang; Chang, Yi</div></li>
+<li class='line-paper'><strong>191 - FlowRec: Prior-Informed Flow Matching for Efficient Sequential Recommendation Generation</strong><div class='line-authors'>Li, Li*; Cheng, Mingyue; Ye, Yuyang; Liu, Zhiding; Chen, Enhong</div></li>
+<li class='line-paper'><strong>356 - HISIR: End2End Hierarchical Intent-based Sequential Recommendation</strong><div class='line-authors'>jiang, yan*; li, chao</div></li>
+<li class='line-paper'><strong>648 - Low-Rank Guided Attention with Wavelet Augmentation for Sequential Recommendation</strong><div class='line-authors'>Li, Hao; Shao, Mingxing; Zhang, Tiancheng*; Yu, Minghe; Geng, Xue; Yu, Ge</div></li>
+<li class='line-paper'><strong>880 - Beyond Static Representation: Coarse-to-Fine Dynamic  Latent Reasoning for Sequential Recommendation</strong><div class='line-authors'>Yang, Xiaochen; Xu, Yin*; Wang, Xiaobei; Wang, Hao; Jiang, Zhida; Chen, Zhen; Xing, Zhaolong</div></li>
+<li class='line-title'>Research 10: Data Mining and Knowledge Discovery (1)</li>
+<li class='line-meta'>Location: Halla A</li>
+<li class='line-meta'>Session Chair: TBD</li>
+<li class='line-paper'><strong>91 - HIPPO: Enhancing the Table Understanding Capability of LLMs through Hybrid-Modal Preference Optimization</strong><div class='line-authors'>Wang, Haolan; Liu, Zhenghao*; Li, Xinze; Yang, Xiaocui; Gu, Yu; Yan, Yukun; Shi, Qi; Li, Fangfang; Chen	, Chong	; Yu, Ge</div></li>
+<li class='line-paper'><strong>377 - HEADS: Temporal Observation Density Boosts Irregular Multivariate Time Series Forecasting</strong><div class='line-authors'>Hu, Yimian*; Zhou, Jianping; Lu, Bin; Zheng, Guanjie; Fu, Luoyi; Wang, Xinbing; Zhou, Chenghu</div></li>
+<li class='line-paper'><strong>530 - Cart: A Future-Oriented Text Impacts Alignment Framework for Time Series Forecasting</strong><div class='line-authors'>Gu, Hailong; Xiong, Haoran; Huang, Keyue; Zhu, Wei; Dai, Yuheng; He, Zhenying*; Jing, Yinan; Zhang, Kai; Wang, X.Sean</div></li>
+<li class='line-paper'><strong>542 - PyraTSG: A Hierarchical Scale Transition Framework for Dependency Modeling in Multivariate Time Series Forecasting</strong><div class='line-authors'>Dai, Yuheng; Xiong, Haoran; Gu, Hailong; He, Zhenying*; Jing, Yinan; Zhang, Kai; Wang, X.Sean</div></li>
+<li class='line-paper'><strong>553 - Balancing Temporal and Inter-Variable Dependencies in Multivariate Time-Series Forecasting</strong><div class='line-authors'>Ju, Jianan*; Wang, Bin; Wang,  Leixia ; yang, xiaochun; Li , Shangru; Feng, Bo; Chu, Boce; Zhu, Jin</div></li>
+<li class='line-paper'><strong>125 - REFINE: A Resource-Efficient LLM-based Approach for Next Top-K POI Recommendation</strong><div class='line-authors'>Pan, Yihong*; Wang, Qiqi; Jiang, Ziyi; Shi, Weizhe; Lin, Zhipeng; Li, Huijia; Zhao, Kaiqi</div></li>
+<li class='line-title'>Research 11: Data-driven AI (1)</li>
+<li class='line-meta'>Location: Halla B</li>
+<li class='line-meta'>Session Chair: TBD</li>
+<li class='line-paper'><strong>213 - Legal-AP: A Framework to Enhance LLM&#39;s Legal Reasoning via Knowledge Augmentation and Adapter-wise Parametric Fusion</strong><div class='line-authors'>Chang, Ao; Chen, Yubo*; Liu, Kang; Zhao, Jun</div></li>
+<li class='line-paper'><strong>312 - DAED: Dynamic Additive Effect Decomposition for Interpretable Time Series Forecasting</strong><div class='line-authors'>Wang, Chaoqun*; Sun, Xiangqian; Wang, Jianjia; Ren, Guangyu; Hua, Zhen</div></li>
+<li class='line-paper'><strong>369 - Retrieval-augmented Diffusion Language Model for Generative Commonsense Reasoning</strong><div class='line-authors'>Fang, Yubo*; Yu, Hai-Tao; Joho, Hideo; Fujita, Sumio</div></li>
+<li class='line-paper'><strong>679 - DMS-ToM: Enhancing LLMs&#39; Theory of Mind via Dramaturgy-driven Mental-state Process</strong><div class='line-authors'>Wu, Chenglong; Liao, Jinzhi; Zhao, Xiang*</div></li>
+<li class='line-paper'><strong>943 - Debiasing LLMs in Knowledge-Intensive Tasks via Information-Gain Guided Front-Door Adjustment</strong><div class='line-authors'>Miao, Xin*; Li, Yongqi; Kang, Hankun; Xu, Mayi; Wen, Jintao; Zhu, Yuanyuan; Zhong, Ming; Jiang, Jiawei; Qian, Tieyun</div></li>
+<li class='line-paper'><strong>559 - MKLoRA: Multi-Knowledge  Collaboration via  Intermediate Representation Splitting of LoRA</strong><div class='line-authors'>Zhang, Hong; Zhao, Feng*; Zhao, Ruilin; Yang, Yu; Xu, Guandong</div></li>
+<li class='line-title'>Research 12: Data Mining and Knowledge Discovery (2)</li>
+<li class='line-meta'>Location: Halla C</li>
+<li class='line-meta'>Session Chair: TBD</li>
+<li class='line-paper'><strong>58 - Bridging Discrete Marks and Continuous Dynamics: Dual-Path Cross-Interaction for Marked Temporal Point Processes</strong><div class='line-authors'>Yuxiang, Liu; Qiao, Liu; Tong, Luo; Yanglei, Gan; Peng, He; Yao, Liu*</div></li>
+<li class='line-paper'><strong>209 - From Knowledge to Causality: Distilling Temporal Knowledge for Group-Wise Granger Causal Discovery</strong><div class='line-authors'>Liu, Bo*; Dai, Di; Li, Hongyan; Hong, Shenda</div></li>
+<li class='line-paper'><strong>381 - A Non-Stationary  Spatiotemporal  Hawkes Process for Railway Delay Causality Learning</strong><div class='line-authors'>Cheng, JuBao; Zhang, Dalin; Yang, Shunjie; Peng, Yunjuan ; Li, Rong-Hua*</div></li>
+<li class='line-paper'><strong>431 - SAGE-LLM: Spatially-Aware Generation and Explanation via Large Language Models for Imbalanced Spatial Data Classification</strong><div class='line-authors'>Tu, Wenhui*; Liu, Wei; Zhu, Huaijie; Yu, Jianxing; Yin, Jian</div></li>
+<li class='line-paper'><strong>615 - Causal Inference Supervised Directed Knowledge Generation for Causal Discovery</strong><div class='line-authors'>Zhou, Xiabing*; Yao, Yucheng; Zhang, Ye; Feng, Junhao; Zhang, Min</div></li>
+<li class='line-paper'><strong>803 - BRep-H: A Data-Centric Framework for Structured Language-Driven BRep Representation and Reconstruction</strong><div class='line-authors'>Lou, Yunzhong*; Luo, Yusheng; Song, Yu; Li, Jiahao; Li, Xueyang; Zhou, Xiangdong</div></li>
+<li class='line-title'>Demo Session 1</li>
+<li class='line-meta'>Location: Eorimok</li>
+<li class='line-meta'>Session Chair: TBD</li>
+<li class='line-paper'><strong>1032- AutoASD: A Unified System for Anomalous Subgraph Discovery in Financial Networks</strong><div class='line-authors'>Han, Xiaolin*; Li, Yuke; Zhang, Yikun</div></li>
+<li class='line-paper'><strong>1036 - Notice-augmented Real-world Audit Report Generation by Large-scale Complex Tabular Data Understanding and New Fields Discovery</strong><div class='line-authors'>Zhou, Xueyi*; Ye, Pei; Chae, Dong-Kyu; Li, Zhenyu</div></li>
+<li class='line-paper'><strong>1039 - RAG-Cache: Efficient Query-Specific Knowledge Caching for Retrieval Augmented Generation</strong><div class='line-authors'>Jin, Haoying*; Feng, Haoyang</div></li>
+<li class='line-paper'><strong>1041 - CCOptimizer: Resource Conffguration Optimizer for Model Cache Pool in Cloud</strong><div class='line-authors'>Chen, Qiming; Gu, Rong*; Ji, Guoding; Huan, Chengying; Ding, Yan; Yan, Chaozhong; Huang, Gang</div></li>
+<li class='line-paper'><strong>1042 - SQL-QMARS: A Query-Guided Multi-Agent Recommendation System for SQL</strong><div class='line-authors'>Xu, Jiawen; Zhou, Wei; Zheng, Yungui; Hu, Huiqi*; Cai, Peng; Zhou, Xuan; Xu, Yaoqiang ; Qian, Chen</div></li>
+<li class='line-paper'><strong>1043 - PJDL: Parallelizing Leapfrog Triejoin via Incremental Trie Construction and Dynamic Load Balancing</strong><div class='line-authors'>Wei, Jiaqi*</div></li>
+<li class='line-title'>Tutorial 3</li>
+<li class='line-meta'>Location: Saebyeol</li>
+<li>Advances in Real-Time Processing of Longitudinal Data: From Statistical and Deep Learning Methods to Applications</li>
+<li>Ying-Ren Chien (National Taipei University of Technology), Pavel Loskot (Zhejiang University-UIUC Institute), Yu Gao (Midea Group)</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="time-slot">
+                    <h3 class="slot-header">TUESDAY 15:30 – 17:00</h3>
+                    <div class="slot-body">
+                        <ul class="slot-lines">
+<li class='line-title'>Research 13: Search and Recommendation (4)</li>
+<li class='line-meta'>Location: Ballroom C</li>
+<li class='line-meta'>Session Chair: TBD</li>
+<li class='line-paper'><strong>87 - DiffKGR: Diffusion-based Virtual Edge Generation for Knowledge Graph Recommendation</strong><div class='line-authors'>Wu, Lyuwen*; Gan, Xiaoying; Fu, Luoyi; Zhou, Lei; Wang, Xinbing; Zhou, Chenghu</div></li>
+<li class='line-paper'><strong>115 - PLRF:A Personalized Learning Recommendation  Framework Based on Federated Knowledge  Graphs</strong><div class='line-authors'>Teng, Yiping; Yu, Tiantian; wang, gang*; Song, Zhen; Li, Jiajia; Hu, Bing</div></li>
+<li class='line-paper'><strong>275 - SeeKRec: Toward Semantic-empowered Knowledge-aware Recommendation</strong><div class='line-authors'>li, xiangming; Li, Qingshan; Chu, Hua; Zhou, Yangtao*; Li, Jianan; Yang, Wanqiang</div></li>
+<li class='line-paper'><strong>290 - PreFact: Knowledge Propagation Regulating Network Toward Preferred Facts for Knowledge-aware Recommendation</strong><div class='line-authors'>Feng, Chengyu; Chu, Hua; Zhou, Yangtao*; Li, Jianan; Li, Qingshan; Li, Xiangming; Lu, Zhongqi; Yang, Wanqiang; Ding, Zhenjiang</div></li>
+<li class='line-paper'><strong>394 - Enhancing Item Understanding in Knowledge Graph-based Recommendation via Large Language Models</strong><div class='line-authors'>lin, xinjie*; Wang, Yitong</div></li>
+<li class='line-paper'><strong>426 - Spurious Correlation Knowledge Graph Disentanglement for Multi-Behavior Recommendation</strong><div class='line-authors'>Xu, Tongxin*; Bin, Chenzhong; Xiao, Cihan; Zeng, Zhixin; Li, Yunhui</div></li>
+<li class='line-title'>Research 14: Data Mining and Knowledge Discovery (3)</li>
+<li class='line-meta'>Location: Halla A</li>
+<li class='line-meta'>Session Chair: TBD</li>
+<li class='line-paper'><strong>375 - CTMamba: Cross-Temporal Fusion in a Hybrid Transformer–Mamba Architecture for Traffic Flow Prediction</strong><div class='line-authors'>Zhang, Yongqin*</div></li>
+<li class='line-paper'><strong>517 - Dynamic Soft Contrastive Learning for Spatio-Temporal Forecasting</strong><div class='line-authors'>Deng, Hanzhi*; Wang, Heyuan; Chen, Wei; Wang, Tengjiao; Wong, Kam-Fai</div></li>
+<li class='line-paper'><strong>618 - Multimodal Crisis Classification via Graph Neural Networks</strong><div class='line-authors'>Shen, Kailing*; Wang, Hongbin; Xian, Yantuan; Guo, Junjun; Yu, Zhengtao</div></li>
+<li class='line-paper'><strong>691 - LOSTFormer: Linear Orthogonal Spatio-Temporal Transformer with Learnable Rotation</strong><div class='line-authors'>Yu, Yechen; Xie, Liang*; Zheng, Jiankai; Tan, Peilin</div></li>
+<li class='line-paper'><strong>815 - A Pilot Empirical Study on When and How to Use Knowledge Graphs as Retrieval Augmented Generation</strong><div class='line-authors'>Yuan, Xujie*; Liu, Yongxu; Di, Shimin; Wu, Shiwen; Zheng, Libin; Meng, Rui; Chen, Lei; Zhou, Xiaofang; Yin, Jian</div></li>
+<li class='line-paper'><strong>825 - The Power of Weighting: Multi-Teacher Distillation for Communication-Efficient Federated Learning</strong><div class='line-authors'>Zhang, Ruojia; Feng, Weijia*; Su, Tongtong; Wang, Wentao; Sun, Fengtao; Wang, Chenyang; Bi, Chongke</div></li>
+<li class='line-title'>Research 15: Graph and Social Network (3)</li>
+<li class='line-meta'>Location: Halla B</li>
+<li class='line-meta'>Session Chair: TBD</li>
+<li class='line-paper'><strong>201 - Homophilic and heterophilic-Aware Multi-View Graph Clustering</strong><div class='line-authors'>zhou, yeqin*; qiu, lirong</div></li>
+<li class='line-paper'><strong>277 - Untying the Knots of Heterophily in Hypergraphs via Mixed-Curvature Manifolds</strong><div class='line-authors'>Liu, Lizhi*</div></li>
+<li class='line-paper'><strong>773 - Towards Real-Time Maintenance of HNSW for ANN Search on Edge Devices</strong><div class='line-authors'>Zhao, Wenbo*; Chang, Yuheng; Li, Hui; Cui, Jiangtao</div></li>
+<li class='line-paper'><strong>500 - All-or-Nothing: Towards Hyperedge-Consistent Node Classification</strong><div class='line-authors'>Wang, Ziwen; Wang, Yihan; Liang, Junli; Lin, Rong; Zhou, Wangqiu; Zhou, Pengfei; Zheng, Ling; Liu, Hao; Song, Qi*</div></li>
+<li class='line-paper'><strong>776 - HyReaL: Clustering Attributed Graph via Hyper-Complex Space Representation Learning</strong><div class='line-authors'>Chen, Junyang; Lu, Yang; Li, Mengke; Yang, Cuie; Zhang, Yiqun*; Cheung, Yiu-ming</div></li>
+<li class='line-paper'><strong>163 - Mitigating Generic Token Dominance in Cross-Domain Foundation Model for Text-Attributed Graphs</strong><div class='line-authors'>Zheng, Heng*; You, Haochen; Zhang, Zijian; Gan, Lubin; Zhang, Hao; Huang, Wenjun; Huang, Jin</div></li>
+<li class='line-title'>Research 16: Data-driven AI (2)</li>
+<li class='line-meta'>Location: Halla C</li>
+<li class='line-meta'>Session Chair: TBD</li>
+<li class='line-paper'><strong>280 - StableEKF-Transformer: Uncertainty-Aware State of Health Estimation with Dynamic Covariance Calibration and Diagonal Jacobian Parameterization</strong><div class='line-authors'>Ding, Yan; Zhu,  Jinqu; Su, Tongtong*; Lv, Di; Feng, Weijia; Wang, Chenyang</div></li>
+<li class='line-paper'><strong>362 - STMHTNet: A Spatio-Temporal Masked Hourglass Transformer Network for Traffic Flow Forecasting</strong><div class='line-authors'>Hong, Yixin*; Zhu, Huaijie; Liu, Wei; Qin, Zixin; Yu, Jianxing; Yin, Jian</div></li>
+<li class='line-paper'><strong>378 - NuTS: Non-uniform Sampling with Distance-Dependent Adaptive Fusion for Time Series Forecasting</strong><div class='line-authors'>Ma, Huiyi; Zhu, Xuanbing; Hao, Yingguang; Wang, Hongyu*</div></li>
+<li class='line-paper'><strong>495 - Harnessing Asynchrony to Balance Modalities in Multi-Modal Federated Learning</strong><div class='line-authors'>Ma, Yiming*; Liu, Boyi; Zhou, Zimu; Wang, Yanfeng; Tong, Yongxin</div></li>
+<li class='line-paper'><strong>515 - Certified Pseudo-label Enhanced Active Learning Framework for Pattern Interest Evaluation</strong><div class='line-authors'>Wang, Xin; Wang, Tian; Wang, Lu; Zhang, Yuxin; Hu, Bin; Zhang, Chong; Xie, Wenbo*</div></li>
+<li class='line-paper'><strong>950 - Aspect-Oriented Prompt with Adaptive Cross-Modal Fusion for Multimodal Sentiment Analysis</strong><div class='line-authors'>Zhang, Jianwei; Li, Yutian; Hu, Yu; Mao, Xudong; Yu, Fuqiang; Lee, Lap-Kei; Wang, Fu Lee; Yang, Zhenguo*</div></li>
+<li class='line-title'>Demo Session 2</li>
+<li class='line-meta'>Location: Eorimok</li>
+<li class='line-meta'>Session Chair: TBD</li>
+<li class='line-paper'><strong>1044- GeneDrug: A Retrieval Platform for Analyzing Gene-Drug Relations in Cancer</strong><div class='line-authors'>Su, Liuzhen; Xie, Xudong; Qian, Weilan; Shao, Minhua; He, Yungang; Zhang, Lihua*</div></li>
+<li class='line-paper'><strong>1046- SemInfer: Accelerating LLM-based Semantic Data Processing via Sparse Indexing</strong><div class='line-authors'>Zhu, Wentao; Zhang, Yuyun; Hu, Huiqi*; Cai, Peng; Zhou, Xuan; Xu, Yaoqiang ; Qian, Chen</div></li>
+<li class='line-paper'><strong>1047- MELT-Rec: A Meta-Learning-Based System for Tourism Recommendation</strong><div class='line-authors'>Xiong, songfu*; Bao, xuguang; Chang, liang; Gu, tianlong</div></li>
+<li class='line-paper'><strong>1050 - Investigating Machine Learning Models for Cardinality Estimation: An interactive Approach</strong><div class='line-authors'>Li, Rui*; Zhao, Kangfei; Li, Mengyu; Yu, Jeffrey Xu</div></li>
+<li class='line-paper'><strong>1052 - Drug-Target Explorer: An Interactive System for Real-Time Extraction of Drug-Target Relationships Based on Large Language Models</strong><div class='line-authors'>Su, Liuzhen; Song, Yimeng; Qian, Weilan; He, Yungang; Shao, Minhua; Zhang, Lihua*</div></li>
+<li class='line-title'>Tutorial 3</li>
+<li class='line-meta'>Location: Saebyeol</li>
+<li>Advances in Real-Time Processing of Longitudinal Data: From Statistical and Deep Learning Methods to Applications</li>
+<li>Ying-Ren Chien (National Taipei University of Technology), Pavel Loskot (Zhejiang University-UIUC Institute), Yu Gao (Midea Group)</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="time-slot">
+                    <h3 class="slot-header">TUESDAY 17:00 – 18:00</h3>
+                    <div class="slot-body">
+                        <ul class="slot-lines">
+<li class='line-title'>Keynote Address 2</li>
+<li class='line-meta'>Location: Ballroom C</li>
+<li class='line-meta'>Session Chair:</li>
+<li>AI Meets Graphs: From AI-Accelerated Graph Analytics to Graph-Enhanced Generation</li>
+<li>Wenjie Zhang (University of New South Wales, Sydney)</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="time-slot">
+                    <h3 class="slot-header">WEDNESDAY 8:30 – 9:30</h3>
+                    <div class="slot-body">
+                        <ul class="slot-lines">
+<li class='line-title'>Keynote Address 3</li>
+<li class='line-meta'>Location: Ballroom C</li>
+<li class='line-meta'>Session Chair: TBD</li>
+<li>Building a Unified, Adaptive, and Extensible System for AI-Powered Data Analysis</li>
+<li>Meihui Zhang (Beijing Institute of Technology)</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="time-slot">
+                    <h3 class="slot-header">WEDNESDAY 9:30 – 10:45</h3>
+                    <div class="slot-body">
+                        <ul class="slot-lines">
+<li class='line-title'>Research 17: Data Mining and Knowledge Discovery (4)</li>
+<li class='line-meta'>Location: Ballroom C</li>
+<li class='line-meta'>Session Chair: TBD</li>
+<li class='line-paper'><strong>96 - ClusterPatchTST: Uncertainty-Aware Causal Clustering for Heterogeneous Time Series Forecasting</strong><div class='line-authors'>Li, Wei*</div></li>
+<li class='line-paper'><strong>417 - tsLLM-SG: Time Series Forecasting by Fine-Tuning LLMs with Dynamic Soft Prompts and Gated Frequency Transformation Adapters</strong><div class='line-authors'>Mao, Dongdong*; Li, Shijia; Zhang, Gaowei; Wang, Wei; Wang, Yi</div></li>
+<li class='line-paper'><strong>439 - A Controllable Agentic Framework for Time-Series Data Synthesis in Few-Shot Scenarios</strong><div class='line-authors'>Chen, Tingan*; Wang, Shijian; Wu, Hanqian; Xiong, Runqun</div></li>
+<li class='line-paper'><strong>512 - TVMC: Target Variance Minimization Clustering in GEMS Latent Representation for Time Series Forecasting of Air Pollution</strong><div class='line-authors'>Kim, Byoungwook*; Lee, Seungwoo; Yang, Yeongwook; Jang, Hong-Jun</div></li>
+<li class='line-paper'><strong>379 - Trans-RAG: Query-Centric Vector Transformation for   Secure Cross-Organizational Retrieval</strong><div class='line-authors'>Liu, Yu*; Peng, Kun; Zhang, Wenxiao; Yuan, Fangfang; Cao, Cong; Lu, Wenxuan; Liu, Yanbing</div></li>
+<li class='line-title'>Research 18: Graph and Social Network (4)</li>
+<li class='line-meta'>Location: Halla A</li>
+<li class='line-meta'>Session Chair: TBD</li>
+<li class='line-paper'><strong>69 - Disentanglement-based Contrastive Learning and Optimization for User Identity Linkage</strong><div class='line-authors'>Yang, Yue*; Zhang, Yichao ; Guan, Jihong; Zhou, Shuigeng; Li, Wengen</div></li>
+<li class='line-paper'><strong>197 - Collaborative Pattern Mining in Activity Graphs</strong><div class='line-authors'>Ling, Beilei*; Guan, Ziyu; Zhao, Wei; Lu, Yiheng; Yan, Meng ; Xu, Cai; Lu, Weigang ; Ling, Beizeng</div></li>
+<li class='line-paper'><strong>200 - Rumor Prevention: Approach of Minimizing the Competitive Influence of Unknown Rumors in Multi-layer Social Networks</strong><div class='line-authors'>Gao, Fei*; He, Qiang; Wang, Xingwei; Qiu, Lin; Huang, Min</div></li>
+<li class='line-paper'><strong>297 - Explainable Team Formation by Integrating Skill Evolution and High-Order Collaboration</strong><div class='line-authors'>Pu, JiaMing*; Kou, Yue; Li, Dong; Shen, DeRong; Nie, TieZheng; Yu, Ge</div></li>
+<li class='line-paper'><strong>357 - SP-GCRL: Influence Maximization on Incomplete Social Graphs</strong><div class='line-authors'>Niu, Haohua*; Yang, Yuxuan; Zhang, Lingfeng; Li, Hao; Liang, Jiao; Luo, Zongfu; Rossi, Luca</div></li>
+<li class='line-title'>Research 19: Data-driven AI (3)</li>
+<li class='line-meta'>Location: Halla B</li>
+<li class='line-meta'>Session Chair: TBD</li>
+<li class='line-paper'><strong>227 - Consensus-on-Graph: Plan-Driven Exploration and Consensus Decision-Making on Knowledge Graphs</strong><div class='line-authors'>Hu, Chengye; Zhan, Buchao; Yuan, Li; Fan, Wenqi; Yan, Shankai*</div></li>
+<li class='line-paper'><strong>276 - Cross-city Traffic Prediction with Semantic-Topological Decoupling and Spatial Attention Enhancement</strong><div class='line-authors'>Gu, Yuwei; Ding, Weilong*; He, Haoyang; Yang, Yang</div></li>
+<li class='line-paper'><strong>546 - BackChainer: Backward Chaining over Graph for Integrating Structured Knowledge into Large Language Model Reasoning</strong><div class='line-authors'>Zhao, Ruilin; Zhao, Feng*; Xu, Guandong</div></li>
+<li class='line-paper'><strong>550 - CoT-F: Leveraging Chain-of-Thought Families in Large Language Models for Complex Question Answering</strong><div class='line-authors'>Zhao, Feng*; Liu, Xianggan; Wang, Long; Zhao, Ruilin; Yang, Yu; Xu, Guandong</div></li>
+<li class='line-paper'><strong>667 - KGCRAG: An Adaptive Community Detection Framework for Robust Graph-Enhanced RAG</strong><div class='line-authors'>Fang, Wenli; Chen, Guohua*; Yuan, Chengzhe; Lin, Ronghua; Tang, Shuangjiao; Tang, Yong</div></li>
+<li class='line-title'>Research 20: Data Mining and Knowledge Discovery (5)</li>
+<li class='line-meta'>Location: Halla C</li>
+<li class='line-meta'>Session Chair: TBD</li>
+<li class='line-paper'><strong>278 - Fewer False Positives for Sparse Anomalies in Long Time-Series: Cross-Window Contrast and Cross-Level Discriminative Reconstruction</strong><div class='line-authors'>jionghuan, chen*; He, qixue; Wang, Lishun; Zhong, Yong ; Qin, Xiaolin</div></li>
+<li class='line-paper'><strong>611 - MS-STNet: Multi-Scale Spatio-Temporal Modeling for Multivariate Time Series Anomaly Detection</strong><div class='line-authors'>Wang, Ming; Li, Jing*; Cui, Yuanning; Li, Fei; Zhang, Jiaqi; Wang, Luhang</div></li>
+<li class='line-paper'><strong>722 - CGSTA: Cross-Scale Graph Contrast with Stability-Aware Alignment for Multivariate Time-Series Anomaly Detection</strong><div class='line-authors'>Qi, Zhongpeng; Zhang, Jun*; Li, Wei; Liang, Zhuoxuan</div></li>
+<li class='line-paper'><strong>745 - Normal Invariant Representation Learning via Weight-guided Distribution Alignment for Open-set Anomaly Detection</strong><div class='line-authors'>Lu, Guanyu; Zhou, Fang*; Shou, Hongzhe; Pavlovski, Martin; Dong, Chenting; Liao, Bingheng; Jin, Cheqing</div></li>
+<li class='line-paper'><strong>759 - PAPT: Periodic-Aware Transformer with Polynomial Trend Fitting for General Time Series Forecasting</strong><div class='line-authors'>Wei, Xiuyuan*; Chen, Jiadong; Fang, Yuchen; Sun, Yinbo; Gao, Xiaofeng; Ma, Lintao; Chen, Guihai</div></li>
+<li class='line-title'>Tutorial 4</li>
+<li class='line-meta'>Location: Eorimok</li>
+<li>Trustworthy Foundation Models with a Data-Centric Approach</li>
+<li>Wenjie Fang (University of Science and Technology of China), Dan Li (Sun Yat-sen University), Jian Lou (Sun Yat-sen University)</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="time-slot">
+                    <h3 class="slot-header">WEDNESDAY 11:00 – 12:15</h3>
+                    <div class="slot-body">
+                        <ul class="slot-lines">
+<li class='line-title'>Research 21: Data Mining and Knowledge Discovery (6)</li>
+<li class='line-meta'>Location: Ballroom C</li>
+<li class='line-meta'>Session Chair: TBD</li>
+<li class='line-paper'><strong>494 - Adaptive GPU Compute Resource Allocation for Efficient High‐utility Itemset Mining</strong><div class='line-authors'>Sreepada, Tarun*; Ozawa, Tsuyoshi; Kimura, Genki; Uday Kiran, Rage; Goda, Kazuo</div></li>
+<li class='line-paper'><strong>516 - Mitigating Negative Transfer in Cross-Domain Sequential Recommendation: Collaborative Memory and Gradient-Feedback Reweighting</strong><div class='line-authors'>Xiao, Shitong; Chen, Rui; Song, Hongtao; Han, Qilong*; Xia, Longyu</div></li>
+<li class='line-paper'><strong>723 - Multi-Agent Causal Reasoning for Suicide Ideation Detection Through Online Conversations</strong><div class='line-authors'>Li, Jun; Wang, Xiangmeng*; Li, Haoyang; Yan, Yifei; Zhang, Shijie; Leong, Hong Va; Feng, Ling; Yu, Nancy Xiaonan; Li, Qing</div></li>
+<li class='line-paper'><strong>129 - TFMoE: Bridging Dual Domains for Long-term Time Series Forecasting via Adaptive Time–Frequency Modeling</strong><div class='line-authors'>Gao, Jianliang; Shi, Yiting*; Peng, Zhipeng; Qin, Chongyun</div></li>
+<li class='line-paper'><strong>167 - DiSRet: Directional Structure-aware Retentive Network for Long-term Time Series Forecasting</strong><div class='line-authors'>peng, zhipeng*; Shi, Yiting ; Qin , Chongyun; Gao, Jianliang</div></li>
+<li class='line-title'>Research 22: Graph and Social Network (5)</li>
+<li class='line-meta'>Location: Halla A</li>
+<li class='line-meta'>Session Chair: TBD</li>
+<li class='line-paper'><strong>199 - ANS-CD: A Novel Label-Efficient Community Detection Approach via Active Node Selection</strong><div class='line-authors'>Xin, Junchang; Liu, Sihan; Wang, Mingcan; Long, Kaifu; Yao, Chenxi; Wang, Zhiqiong*</div></li>
+<li class='line-paper'><strong>443 - Skyline Community Search over Edge-Attributed Bipartite Graphs</strong><div class='line-authors'>Guo, Fangda*; luo, Xuanpu; Xu, Shiyuan; Gao, Haowen; Liu, Yanghao; Shen, Huawei; Cheng, Xueqi</div></li>
+<li class='line-paper'><strong>487 - SPGRF: A Structure-Preserving Graph Reduction Framework</strong><div class='line-authors'>Wang, Xin; Pan, Haiyang; Tong, Zhenhao; Zhang, Ji; Hu, Bin; Xie, Wenbo*</div></li>
+<li class='line-paper'><strong>578 - Hop-Constrained s-t Simple Path Enumeration: Towards Reducing Repeated Vertex Checks</strong><div class='line-authors'>Pei, Tong*; Wang, Bin; Ma, Hengzhao; Yang, Xiaochun; Ding, Rui; Qu, Jiayi; Song, Baoyan</div></li>
+<li class='line-paper'><strong>621 - Constrained Reachability Queries on Hypergraphs</strong><div class='line-authors'>Li, Faming*; Guo, Han; Qiu, Shengli; Yang, Xiaochun; Wang, Bin</div></li>
+<li class='line-title'>Research 23: Security, Privacy and Trust (2)</li>
+<li class='line-meta'>Location: Halla B</li>
+<li class='line-meta'>Session Chair: TBD</li>
+<li class='line-paper'><strong>158 - Is There a Structural Privacy Risk in Graph Prompting with LLMs?</strong><div class='line-authors'>Zhu, Jiani; Lin, Xi*; Qi, Yuxin; Mao, Qinghua; Li, Jianhua; Wu, Jun</div></li>
+<li class='line-paper'><strong>525 - Efficient Single Server Private Information Retrieval without Preprocessing</strong><div class='line-authors'>Jiang, Haohao*; Qu, Yi; Chen, Long; Zhang, Min; Wang, Xiaoyi; Feng, Dengguo</div></li>
+<li class='line-paper'><strong>533 - ACM: Defending Against Label-Only Membership Inference Attacks via Dynamic Adversarial Confidence Modification</strong><div class='line-authors'>Li, ZiShan; Qian, Yongfeng*; Hao, Yixue</div></li>
+<li class='line-paper'><strong>795 - LFRkNN: Towards Leakage-Free Reverse k-Nearest Neighbor Queries on Encrypted Data</strong><div class='line-authors'>Sun, Tianqi; Chi, Jialin; Zhang, Min*; Wu, Axin; Feng, Dengguo</div></li>
+<li class='line-paper'><strong>808 - Private Memory Under the Spotlight: Diagnosing and Defending User-Level Leakage in LLM-Augmented Systems</strong><div class='line-authors'>Ge, Yinchi*; Zhang, Hui; Huang, Zhenyuan; Sun, Haohang; Jin, Shenghao; Yang, Haijun</div></li>
+<li class='line-title'>Research 24: Graph and Social Network (6)</li>
+<li class='line-meta'>Location: Halla C</li>
+<li class='line-meta'>Session Chair: TBD</li>
+<li class='line-paper'><strong>107 - Toward Generalizable Multi-Domain Graph Foundation Models via Dynamic Domain-Aware Feature Alignment</strong><div class='line-authors'>Jeong, Dahyun*; Hwang, Heasoo</div></li>
+<li class='line-paper'><strong>257 - G&#178;rammar: Bilingual Grammar Modeling for Enhanced Text-attributed Graph Learning</strong><div class='line-authors'>Zheng, Heng*; You, Haochen; Liu, Zijun; Zhang, Zijian;  Gan, Lubin; Zhang, Hao; Huang, Wenjun; Huang, Jin</div></li>
+<li class='line-paper'><strong>862 - Unleashing the power of Pre-trained Graph Models in Federated Graph Learning</strong><div class='line-authors'>sun, huabin*; Yan, Bo; Liu, Yaoqi; Fan, Shaohua; Cao, Yang; Shi, Chuan</div></li>
+<li class='line-paper'><strong>656 - ST-HFCR: Unlocking the Potential of Spatio-Temporal Hypergraphs for Next-POI Recommendation</strong><div class='line-authors'>Wen, SiBo; Wang, Nan*; Zhong, YingLi</div></li>
+<li class='line-paper'><strong>617 - Friend-aware Contrastive Learning with Aligned Social Graph for Social Recommendation</strong><div class='line-authors'>Ruan, Zaisheng; Zhu, Yanmin*; Ma, Wenze; Zhao, Xuhao</div></li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="time-slot">
+                    <h3 class="slot-header">WEDNESDAY 13:45 – 15:15</h3>
+                    <div class="slot-body">
+                        <ul class="slot-lines">
+<li class='line-title'>Research 25: Search and Recommendation (5)</li>
+<li class='line-meta'>Location: Ballroom C</li>
+<li class='line-meta'>Session Chair: TBD</li>
+<li class='line-paper'><strong>80 - DynamicPO:Dynamic Preference Optimization for Recommendation</strong><div class='line-authors'>Hu, Xingyu*; Zhang, Kai; Wu, Jiancan; Wang, Shuli; Wang, Chi; Chen, Wenshuai; Zhu, Yinhua; Wang, Haitao; Wang, Xingxing; Wang, Xiang</div></li>
+<li class='line-paper'><strong>139 - TrackRec: Iterative Alternating Feedback with Chain-of-Thought via Preference Alignment for Recommendation</strong><div class='line-authors'>Xia, Yu*; Zhong, Rui; Song, Zeyu; Yang, Wei; Wan, Junchen; Cai, Qingpeng; 	Lu, Chi; Jiang, Peng</div></li>
+<li class='line-paper'><strong>519 - Enhancing LLM-based Recommendation with Semantic-Aligned Collaborative Knowledge</strong><div class='line-authors'>Wang, Zihan; Lin, Jinghao; Yang, Xiaocui; Liu, Yongkang; Feng, Shi*; Wang, Daling; Zhang, Yifei; Yu, Ge</div></li>
+<li class='line-paper'><strong>592 - GNN4LMR: Profile Distillation Enhanced High-order Interactions for LLM-Based Recommendation</strong><div class='line-authors'>Zhang, Lingyan*; Daizhou, Shuwen; Ling, Wanyu; Xie, Yiman; Huang, An</div></li>
+<li class='line-paper'><strong>754 - CDDF: Confidence- and Divergence-Aware Dual-View Dynamic Fusion for Long-Tail Recommendation</strong><div class='line-authors'>Xu, Ziyi; Yang, Zhenyu*; Cai, Mengdi; Guo, Hanxiao; Wang, Fang; Zhang, Zhibo</div></li>
+<li class='line-paper'><strong>777 - LLM-Enhanced Reinforcement Learning for Long-Term User Satisfaction in Interactive Recommendation</strong><div class='line-authors'>Xia, Chongjun*; Peng, Yanchun; Wang, Xianzhi</div></li>
+<li class='line-title'>Research 26: Information Extraction and Summarization (1)</li>
+<li class='line-meta'>Location: Halla A</li>
+<li class='line-meta'>Session Chair: TBD</li>
+<li class='line-paper'><strong>63 - MORE-R1: Guiding LVLM for Multimodal Object-Entity Relation Extraction via Stepwise Reasoning with Reinforcement Learning</strong><div class='line-authors'>Yuan, Xiang*; Chu, Xu; Chen, Xinrong; Li, Haochen; Dai, Zonghong; Fan, Hongcheng; Yuan, Xiaoyue; Li, Weiping; Mo, Tong</div></li>
+<li class='line-paper'><strong>448 - Discrimination Matters: A Simple but Effective Method for Zero-Shot Relation Triplet Extraction</strong><div class='line-authors'>Song, Yi*; Cheng, Qing; Qian, Tieyun; zou, lixin; Hu, Xuming; Li, Wanli; Feng, Zaiwen</div></li>
+<li class='line-paper'><strong>590 - Spatial Relation Extraction Using Type Correlation and Structural Constraints</strong><div class='line-authors'>Chen, Yuming; Li, Peifeng*; Zhu, Qiaoming</div></li>
+<li class='line-paper'><strong>857 - From Implicit Heuristics to Explicit Optimization: A Unified Framework for In-Context Relation Extraction</strong><div class='line-authors'>Sun, Xin*; Li, Muyu; Zhao, Jianfei; Liu, Xinyang</div></li>
+<li class='line-paper'><strong>876 - Self-Supervised Learning for Sparse Matrix Reordering</strong><div class='line-authors'>Li, Ziwei; Yuan, Tao; Liu, Fangfang; Niu, Shuzi*; Li, Huiyuan; Wu, Wenjia</div></li>
+<li class='line-paper'><strong>921 - Document-level Relation Extraction with Bayesian-Adaptive Monte Carlo Tree Search</strong><div class='line-authors'>Wang, Zhen*; Wang, Yu; Zhao, Wen</div></li>
+<li class='line-title'>Research 27: Text and Data Mining (1)</li>
+<li class='line-meta'>Location: Halla B</li>
+<li class='line-meta'>Session Chair: TBD</li>
+<li class='line-paper'><strong>106 - Context–Relation Alignment in Document-Level Relation Extraction via Prompt Graphs</strong><div class='line-authors'>Minuk, Kim*; Heasoo, Hwang</div></li>
+<li class='line-paper'><strong>153 - Evaluating Scoring Bias in LLM-as-a-Judge</strong><div class='line-authors'>Li, Qingquan*; Dou, Shaoyu; Shao, Kailai; Chen, Chao; Hu, Haixiang</div></li>
+<li class='line-paper'><strong>336 - Domain Adaptation Network with Dual-Encoder for Fake News Detection</strong><div class='line-authors'>Sun, Ziwen*; Yang, Yan; Liu, Yong; Zhong, Yingli</div></li>
+<li class='line-paper'><strong>657 - Beyond True Label: Label-Assumed Evidence Extraction for Personality Prediction</strong><div class='line-authors'>Ji, Yu; Huang, Zhe; Liu, Xiang; Shi, Yunyu; Wu, Wen*</div></li>
+<li class='line-paper'><strong>869 - Improving Multi-turn Dialogue Consistency with Self-Recall Thinking</strong><div class='line-authors'>Pang, Renning; Lan, Tian; Liu, Leyuan*; Huang, Xiaoming; Tong, Piao; Zhang, Xiaosong</div></li>
+<li class='line-paper'><strong>557 - Fault-Tolerant Complex Event Matching Using K-NFA on Noisy Event Streams</strong><div class='line-authors'>Qiu, Tao*; Zhao, Bingbing; Lu, Baixu; Zong, Chuanyu; Zhu, Rui; Yang, Xiaochun</div></li>
+<li class='line-title'>Research 28: Index and Storage Systems</li>
+<li class='line-meta'>Location: Halla C</li>
+<li class='line-meta'>Session Chair: TBD</li>
+<li class='line-paper'><strong>205 - DCLex: An on-Disk Learned Index with Optimized I/O and Caching</strong><div class='line-authors'>Wang, Zhuoran*; Cui, Lixiao; Wang, Gang; Liu, Xiaoguang</div></li>
+<li class='line-paper'><strong>344 - SL-Cache: Selective Learning Cache Eviction with Priority Retention for Hot Objects</strong><div class='line-authors'>Zhang, Yu-Ang; Yuan, Yigui; Jin, Peiquan*; Wang, Hongtao; Wang, Xiaoliang; Wan, Shouhong</div></li>
+<li class='line-paper'><strong>429 - AdaSlice: Hotness-aware and Adaptive Slicing for Eviction Algorithms in Database Buffer Manager with Tiered Memory</strong><div class='line-authors'>Tan, Shikai*; Tan, Zhipeng; Lu, Lan; Zhang, Zijian; Xiao, Renzhi; Shu, Yutai; Yuan, Ying; Wang, Jinlong; Qi, Wenjie; Feng, Yuan</div></li>
+<li class='line-paper'><strong>475 - Workload-Aware DHB+Tree: A Dynamic B+-Tree Index for Persistent Memory</strong><div class='line-authors'>qi, jiarui*; Song, Junbao; Shen, Derong; Nie, Tiezheng; Kou, Yue</div></li>
+<li class='line-paper'><strong>554 - LogTrie: Adaptive Trie-Structured Compression with Query Support for Streaming Logs</strong><div class='line-authors'>Chu, Ying; Li, Chaofan; Jin, Peiquan*; Wan, Shouhong</div></li>
+<li class='line-paper'><strong>858 - Giant: An I/O-optimized Graph-based Index for High-dimensional Vector Search via Page Group Expansion</strong><div class='line-authors'>Du, Jiawei*; Hu, Jinlei; Gong, Chengxiao; Chen, Jianxi</div></li>
+<li class='line-title'>Tutorial 5</li>
+<li class='line-meta'>Location: Eorimok</li>
+<li>Reliable Visual Analytics with Dimensionality Reduction: Quality Evaluation and Interpretation of Projections</li>
+<li>Jeon Hyeon (Seoul National University), Takanori Fujiwara (University of Arizona), Rafael M. Martins (Linnaeus University)</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="time-slot">
+                    <h3 class="slot-header">WEDNESDAY 15:30 – 17:00</h3>
+                    <div class="slot-body">
+                        <ul class="slot-lines">
+<li class='line-title'>Research 29: Search and Recommendation (6)</li>
+<li class='line-meta'>Location: Ballroom C</li>
+<li class='line-meta'>Session Chair: TBD</li>
+<li class='line-paper'><strong>72 - Curr-RLCER: Curriculum Reinforcement Learning For Coherence Explainable Recommendation</strong><div class='line-authors'>Pan, xiangchen*; Wei, wei</div></li>
+<li class='line-paper'><strong>296 - Mirror: Disentangling and Purifying Multimodal Information for Recipe Recommendation</strong><div class='line-authors'>Zhou, Jingya*; She, Xiaolong</div></li>
+<li class='line-paper'><strong>338 - GenPlugin: A Plug-and-Play Framework for Long-Tail Generative Recommendation with Exposure Bias Mitigation</strong><div class='line-authors'>yang, kun*; Zheng, Siyao; Li, Tianyi; Li, Xiaodong; Li, Hui</div></li>
+<li class='line-paper'><strong>585 - C&#178;-DiffMM: Cross-Conditioned Contrastive Diffusion for Multimodal Recommendation</strong><div class='line-authors'>Daizhou, Shuwen*; Ling, Wanyu; Zhang, Lingyan</div></li>
+<li class='line-paper'><strong>595 - TIG-Diff: Temporal-Integrated Graph Diffusion for Ranking-Consistent Implicit Feedback Denoising in Recommendation</strong><div class='line-authors'>Zhang, Lingyan*; Daizhou, Shuwen; Ling, Wanyu; Xie, Yiman; Huang, An</div></li>
+<li class='line-paper'><strong>884 - Generative Representational Learning of Foundation Models for Recommendation</strong><div class='line-authors'>Zhou, Zheli; Zhu, Chenxu; Lin, Jianghao*; Chen, Bo; Tang, Ruiming; Yu, Yong; Zhang, Weinan</div></li>
+<li class='line-title'>Research 30: Information Extraction and Summarization (2)</li>
+<li class='line-meta'>Location: Halla A</li>
+<li class='line-meta'>Session Chair: TBD</li>
+<li class='line-paper'><strong>20 - Event Category Discovery through Multi-Dimensional Event Feature Construction from Textual Structure</strong><div class='line-authors'>Ding, Guoxuan*; Li, Yuqing; Wang, Xin; Zha, Daren</div></li>
+<li class='line-paper'><strong>34 - Precedent Retrieval based In-Context Learning for Legal Rationale Generation</strong><div class='line-authors'>Yue, Linan*; Du, Yichao; Gao, Weibo</div></li>
+<li class='line-paper'><strong>243 - Inductive Controlled Generation based on Adaptive Templates for Answering Subjective Product Questions</strong><div class='line-authors'>Yao, Yian; Yu, Jianxing;  Zhu, Huaijie; Lai, Hanjiang; Liu, Wei*; Rao, Yanghui; Yin, Jian</div></li>
+<li class='line-paper'><strong>291 - DBEE: Dual-path Biomedical Event Extraction with Large Language Model</strong><div class='line-authors'>Zeng, Jianjun*; Wang, Jiacheng; Zhang, Weiyan; Wang, Yunpeng; Zhou, Yan; Wu, Yinan; Zhu, Lifeng; Ruan, Tong; Liu, Jingping</div></li>
+<li class='line-paper'><strong>331 - Generative Query Augmentation with Dual-View Contrastive Learning for Dense Retrieval in Conversational Search</strong><div class='line-authors'>Yan, Wenyu*; Gan, Aoran; Liu, Xukai; Chen, Yanjiang; Zhang, Kai; Liu, Qi</div></li>
+<li class='line-paper'><strong>447 - GGEF: A framework for Automatic Extraction of Gene-Drug Relationships from Cancer Guidelines</strong><div class='line-authors'>Su, Liuzhen; Xie, Xudong; Qian, Weilan; Li, Mingcheng; Ma, Shunzheng; Shao, Minhua; Zhang, Lihua*</div></li>
+<li class='line-title'>Research 31: Data Mining and Knowledge Discovery (7)</li>
+<li class='line-meta'>Location: Halla B</li>
+<li class='line-meta'>Session Chair: TBD</li>
+<li class='line-paper'><strong>246 - FCRD: Forced-Choice Relation-based Diagnosis for Noncognitive Assessment</strong><div class='line-authors'>Tu, Yukun; Li, Xiaoyu; Shi, Haoran; Wu, Jin; Zheng, Chanjin*</div></li>
+<li class='line-paper'><strong>311 - A Spatio-Temporal Cognitive Graph-Enhanced Framework for Knowledge Tracing</strong><div class='line-authors'>Huang, Yihao; Zeng, Chen; Mao, Shun; Wu, Zhengyang; Lin, Ronghua*; Tang, Yong</div></li>
+<li class='line-paper'><strong>421 - Spatio-Temporal Fusion in Graph Neural Network for Streaming Knowledge Tracing</strong><div class='line-authors'>Wen, Yi-Fei; Liang, Hang; Yang, Carl; Xie, Wen-Bo; Du, Yajun; Li, Xianyong; Lee, Yan-Li*</div></li>
+<li class='line-paper'><strong>602 - Mining Large Independent Sets on Massive Graphs</strong><div class='line-authors'>Zhang, Yu*; Pedrycz, Witold; Liu, Chanjuan; Zhu, Enqiang</div></li>
+<li class='line-paper'><strong>843 - Multi-domain Denoising for Attribute-aware Sequential Recommendation</strong><div class='line-authors'>Zhou, Pinchao; Wang, Nan*; Zhong, Yingli; Wang, Runzhe</div></li>
+<li class='line-paper'><strong>936 - LACHT: An LLM-Aligned Cross-Hyperedge Tracer for Personalized Learning Path Planning in Programming</strong><div class='line-authors'>Zhang, Junfeng; Tang, Jiuyang; Sheng, Yaqing; Liao, Jinzhi; Zhao, Xiang*</div></li>
+<li class='line-title'>Panel: Data Infrastructure for Agentic LLMs</li>
+<li class='line-meta'>Location: Halla C</li>
+<li>Moderator: Seung-won Hwang (Seoul National University)</li>
+<li class='line-title'>Panelists: Victor Leis (Technical University of Munich), Wenjie Zhang&#160;(University of New South Wales), Meihui Zhang&#160;(Beijing Institute Technology)</li>
+<li class='line-title'>Tutorial 5</li>
+<li class='line-meta'>Location: Eorimok</li>
+<li>Reliable Visual Analytics with Dimensionality Reduction: Quality Evaluation and Interpretation of Projections</li>
+<li>Jeon Hyeon (Seoul National University), Takanori Fujiwara (University of Arizona), Rafael M. Martins (Linnaeus University)</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="time-slot">
+                    <h3 class="slot-header">WEDNESDAY 17:00 – 18:00</h3>
+                    <div class="slot-body">
+                        <ul class="slot-lines">
+<li class='line-title'>Keynote Address 4</li>
+<li class='line-meta'>Location: Ballroom C</li>
+<li class='line-meta'>Session Chair: TBD</li>
+<li>The Long Journey from Subgraphs to Autonomous Agents: Evolution of Graph Intelligence</li>
+<li>Wook-Shin Han (POSTECH Distinguished Professor)</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="time-slot">
+                    <h3 class="slot-header">THURSDAY 8:30 – 9:30</h3>
+                    <div class="slot-body">
+                        <ul class="slot-lines">
+<li class='line-title'>Research 32: Security, Privacy and Trust (3)</li>
+<li class='line-meta'>Location: Ballroom C</li>
+<li class='line-meta'>Session Chair: TBD</li>
+<li class='line-paper'><strong>49 - DPSA: Deception Pattern Learning and Sentiment-Aware Enhancement for Unseen Misinformation Detection</strong><div class='line-authors'>Dong, Yunyun; Luo, Jinfeng; Fu, Tingchao; Li, Fanxiao*; Li, Dayang; SIXANONH, Viradeth; Zhou, Wei</div></li>
+<li class='line-paper'><strong>62 - LLM-MRD:LLM-Guided Multi-View Reasoning Distillation for Fake News Detection</strong><div class='line-authors'>Zhou, Weilin; Tan, Shanwen; Gu, Enhao; Qian, Yurong*</div></li>
+<li class='line-paper'><strong>873 - Fake News Detection Based on Incremental Temporal Graph Modeling</strong><div class='line-authors'>Wei, Wenjie*; Zhang, Yanyue; Zhang, Linhai; Zhou, Deyu</div></li>
+<li class='line-paper'><strong>660 - Enhancing Graph Reconstruction via Node Embedding Alignment</strong><div class='line-authors'>Jiang, XinYu*; Yan, Qiao</div></li>
+<li class='line-title'>Research 33: Data Mining and Knowledge Discovery (8)</li>
+<li class='line-meta'>Location: Halla A</li>
+<li class='line-meta'>Session Chair: TBD</li>
+<li class='line-paper'><strong>574 - PLUGSI: Plug-and-Play Test-Time Graph Adaptation for Spatial Interpolation</strong><div class='line-authors'>Wu, Xuhang; Liang, Zhuoxuan; Li, Wei*; Jia, Xiaohua; Helal, Sumi</div></li>
+<li class='line-paper'><strong>480 - Disentangled Parameter-Efficient Linear Model for Long-Term Time Series Forecasting</strong><div class='line-authors'>Zhao, Yuang*; Li, Tianyu; Chen, Jiadong; Ye, Shenrong; Jiang, Fuxin; Gao, Xiaofeng</div></li>
+<li class='line-paper'><strong>805 - LogicGate: Adaptive Rule-Based Modeling of Exogenous Effects for Time-Series Forecasting</strong><div class='line-authors'>Zhong, Jie*; Chen, Tong; Yuan, Wei; Cui, Lizhen; Yin, Hongzhi</div></li>
+<li class='line-paper'><strong>143 - Zero-Shot Human Mobility Forecasting via Large Language Model with Hierarchical Reasoning</strong><div class='line-authors'>Li, Wenyao*; Zhang, Ran; Wang, Pengyang; Zhou, Yuanchun; Wang, Pengfei</div></li>
+<li class='line-title'>Research 34: Bio and Health Informatics (2)</li>
+<li class='line-meta'>Location: Halla B</li>
+<li class='line-meta'>Session Chair: TBD</li>
+<li class='line-paper'><strong>124 - Bridging LLMs and KGs: Data and Knowledge Adaptive Medical Reasoning for Med-VQA</strong><div class='line-authors'>Huang, Wenti*; He, Yu; Yang, Zhan</div></li>
+<li class='line-paper'><strong>681 - DMH-Net: Disentangled Multi-Atlas High-Order  Representation Learning Network for  Neurological Disorder Diagnosis</strong><div class='line-authors'>Yuan, Manman*; Ma, Ximing; Zhao, Yan; Ye, Jiazhen; Shao, Mengyi; Jia, Weiming; Yin, Can</div></li>
+<li class='line-paper'><strong>696 - Set-to-One Structured Captioning for Heterogeneous Nasal Image Collections via Spatio-Temporal Modeling and Clinical Knowledge Integration</strong><div class='line-authors'>Yuan, Xinpan; Ju, Jianuo; Hua, Liujie*; Huang, Mingzhu</div></li>
+<li class='line-paper'><strong>874 - From Personal to Clinical: Personalisation and Depersonalisation for Explainable Depression Detection</strong><div class='line-authors'>Gao, Ziyang; Zhang, Linhai; He, Yulan; Zhou, Deyu*</div></li>
+<li class='line-title'>Research 35: Data Mining and Knowledge Discovery (9)</li>
+<li class='line-meta'>Location: Halla C</li>
+<li class='line-meta'>Session Chair: TBD</li>
+<li class='line-paper'><strong>330 - RuleGF: Rule-Guided Graph Fusion for Link Prediction across Knowledge Graphs</strong><div class='line-authors'>Ding, Guanwen*; Wang, Zhichun</div></li>
+<li class='line-paper'><strong>347 - HFTS: Time-Span-Aware Historical–Future Modeling for Temporal Knowledge Graph Completion</strong><div class='line-authors'>Huang, Wei; Liu, Hai*; He, Jing; Wang, Fu Lee; Hao, Tianyong</div></li>
+<li class='line-paper'><strong>316 - DSGCL: Dual Sampling with High-order Collaboration for Graph Contrastive Learning</strong><div class='line-authors'>Gu, Huinan; yang, Zhe*</div></li>
+<li class='line-paper'><strong>470 - SemFuse: Aligning LLM Semantics with Graph Topology for Heterophilic Learning</strong><div class='line-authors'>Zhao, Zuoxiang; Song, Shuhan; Zhang, Yuan; Liu, Xiping; Wang, Da; Cao, Huawei*</div></li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="time-slot">
+                    <h3 class="slot-header">THURSDAY 9:30 – 10:45</h3>
+                    <div class="slot-body">
+                        <ul class="slot-lines">
+<li class='line-title'>Research 36: Machine Learning for Database</li>
+<li class='line-meta'>Location: Ballroom C</li>
+<li class='line-meta'>Session Chair: TBD</li>
+<li class='line-paper'><strong>74 - ActiveDiag: Dynamic Fusion of Discrepancy and Uncertainty in Active Learning for Database Anomaly Diagnosis</strong><div class='line-authors'>Yuan, Peize; Li, Zixuan; Gao, Xiyue*; Wang, Mingzhe; Li, Hui; Peng, Yanguo; Tu, Yaofeng; Cui, Jiangtao</div></li>
+<li class='line-paper'><strong>122 - Q-Doctor: Retrieval-Augmented Diagnosis and Multi-Agent Correction for Query Performance Anomalies</strong><div class='line-authors'>Han, Yiwen*; Pan, Zhicheng; Chen, Lixiang; Yang, Chengcheng; Zhang, Rong; Zhou, Xuan</div></li>
+<li class='line-paper'><strong>307 - DBRooter: An Efficient Causal Root Cause Analysis Framework for Distributed Databases</strong><div class='line-authors'>Xiang, Qingfeng*; Shao, YIngxia; Tian, Chenglin; Xu, Quanqing; Luo, Qiyao</div></li>
+<li class='line-paper'><strong>730 - Accuracy-Aware Log Replay with Fine-Grained Prioritization for Real-Time Prediction Queries</strong><div class='line-authors'>Huang, Shanshan; Jiang, Jing; Cai, Peng*; Dong, Qiwen; Hu, Huiqi</div></li>
+<li class='line-paper'><strong>778 - LLM-Driven Online Aggregation for Unstructured Text Analytics</strong><div class='line-authors'>Hui, Chao; Lu, Weizheng*; Gao, Yanjie; Xiong, Lingfeng; Wang, Yunhai; Chen, Yueguo</div></li>
+<li class='line-title'>Research 37: Bio and Health Informatics (3)</li>
+<li class='line-meta'>Location: Halla A</li>
+<li class='line-meta'>Session Chair: TBD</li>
+<li class='line-paper'><strong>352 - AURORA: An Adaptive Multi-Granularity Graph Learning Framework for Drug Repositioning</strong><div class='line-authors'>Zhang, Yidan *; Duan, Lei; Zheng, Huiru; Xu, Jiaxuan</div></li>
+<li class='line-paper'><strong>535 - PiM-X: Pathway-Guided Mamba State-Space Fusion for Interpretable Drug Response Prediction</strong><div class='line-authors'>Xing, Jiajie; Zhang, Yuan; Wang, Juan*</div></li>
+<li class='line-paper'><strong>640 - VoluAlign-DTA: Enhancing Prediction of Drug-Target Binding Affinity by Integrating Geometric Alignment with Dynamic Multimodal Management</strong><div class='line-authors'>Yuan, MengFan*; Zhang, Yuan; Jia, Bing; Huang, Baoqi</div></li>
+<li class='line-paper'><strong>792 - Multimodal Drug Recommendation with Quantum Chemical Molecular Representations</strong><div class='line-authors'>Kim, Yujin; Park, Seoeun; Kwon, Chongmyung; Hong, Charmgil*</div></li>
+<li class='line-paper'><strong>819 - Contrastive Graph View Alignment for Drug–Target Affinity Prediction</strong><div class='line-authors'>Yuan, Zhang; Xing, Jiajie; Wang, Juan*</div></li>
+<li class='line-title'>Research 38: Distributed Ledger and Blockchain</li>
+<li class='line-meta'>Location: Halla B</li>
+<li class='line-meta'>Session Chair: TBD</li>
+<li class='line-paper'><strong>185 - Ponzitracker: A General Detection Framework for Ponzi Scheme in Blockchains</strong><div class='line-authors'>wang, gang*; Teng, Yipeng; Song, Zhen; Li, Leyang; Zhang, Qinnan; Zhang, Qingbo; Zhang, Yanfeng; Yu, Ge</div></li>
+<li class='line-paper'><strong>952 - RVLLM-Bench: A Comprehensive Benchmark for Large Language Model Inference with RISC-V Vector Extension</strong><div class='line-authors'>Pan, Zhi Lu; Zou, Xiao Feng; Chen, Pan Feng; Chen, Mei; Li, Hui*; Wang, Yan Hao</div></li>
+<li class='line-paper'><strong>939 - Point-Patch Transformer for Multivariate Time Series Forecasting</strong><div class='line-authors'>Xiao, Wenyi*; Niu, Dejiao; Cai, Tao; Deng, Yikang; Zhang, Liushan; Huang, Qiujing</div></li>
+<li class='line-paper'><strong>732 - ExperMatch: A Unified Benchmark for Bidirectional and Cross-Domain Expertise Matching</strong><div class='line-authors'>Chen, Wei; Chen, Kaibin; Qiu, Yu-Xuan*; Zhang, Weipeng; Lu, Minhua; Chen, Qianting; Liu, Jiuzhang; CHAN, WAI KIN (VICTOR); Mao, Rui</div></li>
+<li class='line-paper'><strong>821 - An Effective Distributed Ride-Sharing Framework on Large-Scale Road Networks</strong><div class='line-authors'>Liu, Junwei; Zhang, Detian*</div></li>
+<li class='line-title'>Research 39: Cloud Data Management</li>
+<li class='line-meta'>Location: Halla C</li>
+<li class='line-meta'>Session Chair: TBD</li>
+<li class='line-paper'><strong>4 - ZTune: Model-Assisted Reinforcement Learning for Executor Tuning on Ad Hoc Spark SQL Query</strong><div class='line-authors'>Kong, Dejun*; Huang, Xiuqi; Gao, Xiaofeng</div></li>
+<li class='line-paper'><strong>145 - P-Raft: Distributed Consensus with Predictive Optimization Under Cross-Domain Sites</strong><div class='line-authors'>Wang, Yangyang*; Cheng, Ziqian; Ji, Yucheng; Xu, Zichen</div></li>
+<li class='line-paper'><strong>454 - CoPA–Fed: A Federated Reliability Auditing System under Biased Client Participation</strong><div class='line-authors'>Tallat, Raiha*; Xiaohua, Xu; Hawbani, Ammar; Wang, Xingfu</div></li>
+<li class='line-paper'><strong>409 - FSEM: Few-Shot Entity Matching using Multi-Loss Adversarial Training with Multi-Attention Masking</strong><div class='line-authors'>Xiong, Mengfei*; Ma, Huayan; 	Shen, Derong; Nie, Tiezheng; Kou, Yue</div></li>
+<li class='line-paper'><strong>639 - DPC-Net: A Decouple-Predict-Correct Framework for Long-term Time Series Forecasting</strong><div class='line-authors'>Su, Xiangyu; Cui, Zhihong; Liu, Hengyu; Zhang, Tiancheng*; Yu, Minghe; Bao, Yubin; Yu, Ge</div></li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="time-slot">
+                    <h3 class="slot-header">THURSDAY 11:00 – 12:15</h3>
+                    <div class="slot-body">
+                        <ul class="slot-lines">
+<li class='line-title'>Industry 1: Information Retrieval and Knowledge Discovery (1)</li>
+<li class='line-meta'>Location: Ballroom C</li>
+<li class='line-meta'>Session Chair: TBD</li>
+<li class='line-paper'><strong>978 - Adaptive Piece-wise Space-filling Curves for Dynamic Query Workloads</strong><div class='line-authors'>Junshen, Li; Zhengyu, Liao; Wei, Liang; Zhonglong, Zheng; Shiyou, Qian*; Guangtao, Xue; Jian, Cao; Xiaoshan, Li</div></li>
+<li class='line-paper'><strong>1002 - FORCE: A Benchmark for Formula Reasoning  and Comprehension in Academic Papers</strong><div class='line-authors'>Hu, Huikang; Zhang, Tianhao; Dai, Xinbang; Shen, Xiaoli; Qi, Guilin*; Zhang, Yuyang; Li, Xiaoguang;  Shang, Lifeng</div></li>
+<li class='line-paper'><strong>1005 - KCoEvo: A Knowledge Graph Augmented Framework for Evolutionary Code Generation</strong><div class='line-authors'>Kang, Jiazhen; lu, yuchen; jiang, chen; liu, jinrui; zhang, tianhao; jiang, bo; sun, ningyuan; wu, tongtong; qi, guilin*</div></li>
+<li class='line-paper'><strong>1022 - CRAG: Causality-Aware Retrieval-Augmented Generation for Budget Auditing QA</strong><div class='line-authors'>Xu, Gaofeng*</div></li>
+<li class='line-paper'><strong>1023 - Efficient Moving-Together-Patterns Discovery from Large-Scale Travel Data</strong><div class='line-authors'>Han, Xiaolin*; Zhang, Tianwen; Chen, Niehao; Cheng, Reynold</div></li>
+<li class='line-title'>Research 40: Bio and Health Informatics (4)</li>
+<li class='line-meta'>Location: Halla A</li>
+<li class='line-meta'>Session Chair: TBD</li>
+<li class='line-paper'><strong>40 - NeuroCEA: Cross-domain Embedding Augmentation with Contrastive Knowledge Distillation for Electrophysiological Time Series Representation</strong><div class='line-authors'>Zhou, Guichun*; Zhou, Xiangdong</div></li>
+<li class='line-paper'><strong>298 - S&#179;D-Net: Learning Disentangled Subject-Invariant Representations for EEG Sleep Staging via Spectral-Spatial-Sequential Feature Fusion</strong><div class='line-authors'>Luo, Jiajie; Long, Jianqiao; He, Xiyuan; Li, Jiguang; Degenaar, Patrick; Li, Jichun*</div></li>
+<li class='line-paper'><strong>551 - Retrieval-Augmented Multi-Modal Representation Learning for ECG Analysis</strong><div class='line-authors'>Wang, Shuang*; Pang, Zhenlong; Xu, Xinzhu; Wang, Shirui; Zhang, Li</div></li>
+<li class='line-paper'><strong>727 - DeFuseMod: A Disentangle-and-Fuse Model for Dual-Domain Self-Supervised EEG Representation Learning</strong><div class='line-authors'>Zhang, Jude*; Zhang, Mingwei; Zhou, Qiaoli</div></li>
+<li class='line-paper'><strong>790 - From Heterogeneity to Harmony: Universal Pretraining for EEG-Based Emotion Recognition</strong><div class='line-authors'>Li, You; Hao, Wang; Li, Xiang*</div></li>
+<li class='line-title'>Industry 1: Mining and Machine Learning</li>
+<li class='line-meta'>Location: Halla B</li>
+<li class='line-meta'>Session Chair: TBD</li>
+<li class='line-paper'><strong>977 - Eureka: Intelligent Feature Engineering for Enterprise AI Cloud Resource Demand Prediction</strong><div class='line-authors'>Li, Hangxuan;  Jia, Renjun;  Wu, Xuezhang*; Qian, Yunjie; Zheng, Zeqi; Zhang, Xianling</div></li>
+<li class='line-paper'><strong>1006 - T2D-CNet: A Temporal-aware Decoupling and Data-aware Debiasing Coordination Network for Personalized Call Timing at Scale</strong><div class='line-authors'>Tao, Wanjie*; Zheng, Yanyan; Gou, Zhumei; Lu, Quan; Jiang, Ning</div></li>
+<li class='line-paper'><strong>1008 - SkillPrice: Semantic Skill Hierarchical Reinforcement Learning for Interpretable E-commerce Dynamic Price Recommendation</strong><div class='line-authors'>Liu, Jingjin*; Hong, Siqi ; Zhuo, Hankui; Zhang, Yanning; Ma, Chennan; Wang, Xiuchong; Zhu, Junxiong</div></li>
+<li class='line-paper'><strong>1011 - ENDeliver: An Energy-Aware Framework of Large Spatio-temporal Model for E-Bike Delivery Route Planning</strong><div class='line-authors'>Shi, Yuduo*; Li, Zhao; Ma, WenRui; Xu, Haitao</div></li>
+<li class='line-paper'><strong>1017 - Large Language Model-enhanced Dense Retrieval for Food-related Search on Meituan</strong><div class='line-authors'>Chen, Yuluo; Li, Haorui; Guo, Tai; She, Junda; Lu, Siyu; Liu, Qiang; Lei, Jun; Wang, Xingxing; Yang, Cheng*</div></li>
+<li class='line-title'>Research 41: Data Mining and Knowledge Discovery (10)</li>
+<li class='line-meta'>Location: Halla C</li>
+<li class='line-meta'>Session Chair: TBD</li>
+<li class='line-paper'><strong>202 - Traversability-enhanced Long-range Trajectory Recovery with Motion-variation Modeling</strong><div class='line-authors'>Liu, Jiafan*; Wu, Wenyu; Mao, Jiali</div></li>
+<li class='line-paper'><strong>622 - Lite-DRTG: A Lightweight Diffusion-based Trajectory Generation for Real-Time Mapless Navigation</strong><div class='line-authors'>Lee, Jeonghun*; Kim, Taehoon; Kim, Kyoungsook; Liu, Xin</div></li>
+<li class='line-paper'><strong>670 - Structure-Adaptive Clustering via Multi-Scale Ellipsoidal Granules</strong><div class='line-authors'>xin, xianwei; Li, Hao; Yao, Zengfang; Song, Yuchen; Wang, Chenyang*; Wang, Yu</div></li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="time-slot">
+                    <h3 class="slot-header">THURSDAY 13:45 – 15:15</h3>
+                    <div class="slot-body">
+                        <ul class="slot-lines">
+<li class='line-title'>Research 42: Data Mining and Knowledge Discovery (11)</li>
+<li class='line-meta'>Location: Ballroom C</li>
+<li class='line-meta'>Session Chair: TBD</li>
+<li class='line-paper'><strong>741 - ForceTraj: Modeling Realistic Intention and Heterogeneous Interactions for Multi-Modal Trajectory Prediction</strong><div class='line-authors'>Yao, Guanyu; Lin, Yan; Gong, Letian; Zhang, Xinyue; Shuang, Yiwei; Guo, Shengnan*; Wan, Huaiyu</div></li>
+<li class='line-paper'><strong>51 - Aggregate, Optimize, and Propagate: A Forward-Forward Algorithm Framework for Graph-Based Recommendation</strong><div class='line-authors'>Chen, Ximing*; Lei, Pui Ieng; Sheng, Yijun; Liu, Yanyan; Gong, Zhiguo</div></li>
+<li class='line-paper'><strong>325 - MSRTUL: A Multiscale Semantics-Relationships Fusion Representation Model for Trajectory-User Linking</strong><div class='line-authors'>Zhang, Jing; Luo, Yuqi; Li, Jiajia*; Zhu, Rui; Zhang, Anzhen; Teng, Yiping; Li, Siqi</div></li>
+<li class='line-title'>Research 43: Text and Data Mining (2)</li>
+<li class='line-meta'>Location: Halla A</li>
+<li class='line-meta'>Session Chair: TBD</li>
+<li class='line-paper'><strong>189 - Task-Aware Text Graph Structure Learning for Semi-Supervised Text Classification</strong><div class='line-authors'>Wang, Shiyu*; Zhou, Gang; Lu, Jicang; Huang, Ningbo; Pi, Qiankun</div></li>
+<li class='line-paper'><strong>471 - Bridge-SQL: Bridging Single- and Multi-Turn Text-to-SQL via Preference-Aligned Question Rewriting</strong><div class='line-authors'>Zhu, Xuhang; Tang, Xiu; Wu, Sai; Tang, Yixuan; Wang, Haobo; Yao, Chang; Xia, Ruichen*; Chen, Gang</div></li>
+<li class='line-paper'><strong>476 - MAC-NER: Multi-Agent Collaborative Framework for Educational Named Entity Recognition</strong><div class='line-authors'>Lin, Chunhua*; Du, Xiaofeng; Zhang, Xiaoyan; Lu, Tianbo</div></li>
+<li class='line-paper'><strong>483 - NCPT: Feature-Aligned New Classifier Initialization for Incremental Named Entity Recognition</strong><div class='line-authors'>Liu, Zesheng*; 	Zhu, Qiannan; Li, 	Cuiping; Chen, 	Hong</div></li>
+<li class='line-paper'><strong>541 - Dual-Verbalizer with Label Correlation Modeling for Few-Shot Multi-Label Text Classification</strong><div class='line-authors'>Tian, Zhiyi*; Sun, Jingwen; Sun, Guangzhong; Sun, Jingwei; He, Yu</div></li>
+<li class='line-paper'><strong>718 - Linguistically Informed Graph Model and Semantic Contrastive Learning for Korean Short Text Classification</strong><div class='line-authors'>Yoo, Jaegeon*; Kim, Byoungwook; Yang, Yeongwook; Jang, Hong-Jun</div></li>
+<li class='line-title'>Research 44: Data Quality and Credibility</li>
+<li class='line-meta'>Location: Halla B</li>
+<li class='line-meta'>Session Chair: TBD</li>
+<li class='line-paper'><strong>148 - Distribution-Preserving Imputation for Multimodal Conversational Data via Structurally-Aware Latent Diffusion</strong><div class='line-authors'>Wang, Han; KIM, DEOK-HWAN*</div></li>
+<li class='line-paper'><strong>248 - Automatic String Data Validation with Pattern Discovery</strong><div class='line-authors'>Han, Ziyan*; Lin, Xinwei; Di, Peng; Xiao, Chuan; Onizuka, Makoto; Liu, Jiuzhang; Mao, Rui; Qin, Jianbin</div></li>
+<li class='line-paper'><strong>388 - AP-Shapley: Efficient Shapley Value Computation for Federated Learning Contribution Evaluation via Adaptive Pruning</strong><div class='line-authors'>Wang, Lingfu; Wu, Tong; Luo, Guangchun; Guo, Wei; Chen, Aiguo*</div></li>
+<li class='line-paper'><strong>633 - Discovering Approximate Functional Dependencies using Correlation Measures</strong><div class='line-authors'>Meng, Qingxin; Yin, Shining; Wang, Fengyan; Zhang, Anzhen*; Zhang, Jing; Zong, Chuanyu</div></li>
+<li class='line-paper'><strong>802 - Community-Aware Graph Contrastive Learning for Long-Tail Crowdsourcing Truth Inference</strong><div class='line-authors'>Fang, Xiu; Liang, Heting*; Yi, Yuqiong; Huang, Xinwei; Sun, Guohao; Zhang, Ge</div></li>
+<li class='line-paper'><strong>930 - Lightweight Time Series Data Valuation on Time Series Foundation Models via In-Context Finetuning</strong><div class='line-authors'>Wu, Shunyu*; Li, Tianyue; Leng, Yixuan; Suo, Jingyi; Lou, Jian; Li, Dan; Ng, See-Kiong</div></li>
+<li class='line-title'>Industry 3: Information Retrieval and Knowledge Discovery (2)</li>
+<li class='line-meta'>Location: Halla C</li>
+<li class='line-meta'>Session Chair: TBD</li>
+<li class='line-paper'><strong>964 - Beyond Residuals: A Progressive Semantic-Preserving Quantization Approach for Recommendation</strong><div class='line-authors'>Xiao, Liwen; Wang, Shijia; Xu, Songpei; Xiao, Qiang*; Guo, Da; Ren, Yintao; Wang, Dongjing; Luo, Chuanjiang</div></li>
+<li class='line-paper'><strong>974 - Generative Store Retrieval in Taobao Search</strong><div class='line-authors'>Zhang, Yingchen*; Zhang, Ruqing; Guo, Jiafeng; de Rijke, Maarten; Zhang, Kaixuan; Chen, Zhihong; Lv, Fuyu; Cheng, Xueqi</div></li>
+<li class='line-paper'><strong>995 - Counterfactual Reasoning for Weak Interest Overfitting in Sequential Recommendation via Interest Segmentation</strong><div class='line-authors'>Sun, Chuike; Chen, Yuhao; Fang, Xing; Huang, Yang*; Luo, Songyin; Tang, Ruocong; Wang, Jing; Chen, Junzhou</div></li>
+<li class='line-paper'><strong>1015 - Beyond the Trigger: Learning Collaborative Context for Generalizable Trigger-Induced Recommendation</strong><div class='line-authors'>GAO, Chen*; Zhao, Zixin; Shao, Lv; Liu, Tong</div></li>
+<li class='line-paper'><strong>968 - NICE: Neighborhood-Consistent Counterfactual Generation for Minority Class Augmentation</strong><div class='line-authors'>Wang, Linna*; Ma, Yuehang; Fu, Yunhan; Chen, Yimin; Feng, Ziliang; Lu, Li</div></li>
+<li class='line-paper'><strong>985 - PBRaft: A Scalable and Workload-Adaptive CFT Consensus Protocol for Permissioned Blockchain</strong><div class='line-authors'>Tong, Xing*; Zhang, Wenyu; Zhang, Zhao; Yang, Bin; Jin, Cheqing</div></li>
+                        </ul>
+                    </div>
+                </article>
             </div>
         </section>
     </main>
@@ -161,4 +862,8 @@
 </body>
 
 </html>
+
+
+
+
 
