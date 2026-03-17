@@ -2502,6 +2502,53 @@ footer {
 }
 
 /* Acknowledgment Section */
+.sponsors {
+    padding: 4rem 2rem;
+    background: linear-gradient(180deg, #fffdf8 0%, #ffffff 100%);
+    margin-top: 2rem;
+}
+
+.sponsor-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.25rem;
+    align-items: stretch;
+}
+
+.sponsor-card {
+    background: var(--white);
+    border: 1px solid rgba(15, 46, 99, 0.08);
+    border-radius: 16px;
+    min-height: 130px;
+    padding: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 25px -18px rgba(15, 46, 99, 0.45);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.sponsor-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 32px -20px rgba(15, 46, 99, 0.55);
+}
+
+.sponsor-card-dark {
+    background: #2f2f2f;
+    border-color: rgba(255, 255, 255, 0.08);
+}
+
+.sponsor-card img {
+    max-width: 100%;
+    max-height: 72px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
 .acknowledgment {
     padding: 4rem 2rem;
     background-color: var(--white);
@@ -2559,6 +2606,24 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .sponsors {
+        padding: 3rem 1rem;
+    }
+
+    .sponsor-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1rem;
+    }
+
+    .sponsor-card {
+        min-height: 110px;
+        padding: 1rem;
+    }
+
+    .sponsor-card img {
+        max-height: 56px;
+    }
+
     .acknowledgment {
         padding: 3rem 1rem;
     }
