@@ -2508,13 +2508,51 @@ footer {
     margin-top: 2rem;
 }
 
-.sponsor-grid {
+.sponsor-groups {
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 2rem;
+}
+
+.sponsor-group {
+    display: grid;
+    gap: 1rem;
+}
+
+.sponsor-tier {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    padding: 0 0 0.5rem;
+    border-radius: 0;
+    background: transparent;
+    color: #0f2e63;
+    font-size: 1.2rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(15, 46, 99, 0.16);
+}
+
+.sponsor-tier::after {
+    content: "";
+    flex: 1;
+    height: 2px;
+    background: linear-gradient(90deg, rgba(15, 46, 99, 0.95) 0%, rgba(47, 109, 181, 0.7) 55%, rgba(15, 46, 99, 0.16) 100%);
+    border-radius: 999px;
+}
+
+.sponsor-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1.25rem;
     align-items: stretch;
+}
+
+.sponsor-grid-wide {
+    grid-template-columns: minmax(220px, 320px);
 }
 
 .sponsor-card {
@@ -2540,6 +2578,18 @@ footer {
     border-color: rgba(255, 255, 255, 0.08);
 }
 
+.sponsor-card-placeholder {
+    border: 1px dashed rgba(15, 46, 99, 0.22);
+    background: #f8fafc;
+    color: #4a5568;
+}
+
+.sponsor-card-placeholder span {
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
 .sponsor-card img {
     max-width: 100%;
     max-height: 72px;
@@ -2547,6 +2597,14 @@ footer {
     height: auto;
     object-fit: contain;
     display: block;
+}
+
+.sponsor-group-gold .sponsor-card {
+    min-height: 148px;
+}
+
+.sponsor-group-gold .sponsor-card img {
+    max-height: 88px;
 }
 
 .acknowledgment {
@@ -2615,6 +2673,10 @@ footer {
         gap: 1rem;
     }
 
+    .sponsor-grid-wide {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
     .sponsor-card {
         min-height: 110px;
         padding: 1rem;
@@ -2622,6 +2684,14 @@ footer {
 
     .sponsor-card img {
         max-height: 56px;
+    }
+
+    .sponsor-group-gold .sponsor-card {
+        min-height: 124px;
+    }
+
+    .sponsor-group-gold .sponsor-card img {
+        max-height: 68px;
     }
 
     .acknowledgment {
