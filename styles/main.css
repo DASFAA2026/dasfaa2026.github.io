@@ -2599,6 +2599,19 @@ footer {
     display: block;
 }
 
+.sponsor-card-large {
+    min-height: 156px;
+    padding: 0.5rem;
+    overflow: visible;
+}
+
+.sponsor-card-large img {
+    max-width: 100%;
+    max-height: 140px;
+    transform: scale(2);
+    transform-origin: center;
+}
+
 .sponsor-group-gold .sponsor-card {
     min-height: 148px;
 }
