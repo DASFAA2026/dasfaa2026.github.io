@@ -858,6 +858,66 @@ footer {
     margin-bottom: 0.5rem;
 }
 
+.award-header h3 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    line-height: 1.35;
+    margin-bottom: 0.5rem;
+}
+
+.award-description p {
+    margin-bottom: 0.5rem;
+}
+
+.award-label {
+    color: var(--dark-gray);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.award-recipient {
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.award-affiliation,
+.award-paper-title {
+    font-weight: 600;
+}
+
+.award-paper-details {
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    gap: 0.75rem 1rem;
+    margin: 0;
+}
+
+.award-paper-details dt {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.award-paper-details dd {
+    margin: 0;
+}
+
+.award-committee-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.award-committee-list li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.award-committee-list li:last-child {
+    border-bottom: none;
+}
+
 /* Tutorial Specific Styles */
 .tutorial-card h3 {
     color: var(--primary-color);
