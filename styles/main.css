@@ -737,6 +737,44 @@ footer {
     line-height: 1.3;
 }
 
+.accepted-papers-summary {
+    color: var(--dark-gray);
+    margin-bottom: 1.5rem;
+}
+
+.accepted-paper-list {
+    display: grid;
+    gap: 1rem;
+}
+
+.accepted-paper-card {
+    margin-bottom: 0;
+    padding: 1rem 1.25rem;
+}
+
+.accepted-paper-card .paper-header {
+    margin-bottom: 0.5rem;
+}
+
+.accepted-paper-card h3 {
+    font-size: 1.05rem;
+    line-height: 1.4;
+}
+
+.accepted-paper-card .paper-authors {
+    color: var(--dark-gray);
+    line-height: 1.6;
+    margin: 0;
+    overflow-wrap: anywhere;
+}
+
+.paper-id {
+    color: var(--secondary-color);
+    font-weight: 700;
+    margin-right: 0.35rem;
+    white-space: nowrap;
+}
+
 .session-time,
 .date,
 .keynote-time {
