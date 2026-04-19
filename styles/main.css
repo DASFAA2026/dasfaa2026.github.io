@@ -887,22 +887,6 @@ footer {
     font-weight: 600;
 }
 
-.award-paper-details {
-    display: grid;
-    grid-template-columns: 130px 1fr;
-    gap: 0.75rem 1rem;
-    margin: 0;
-}
-
-.award-paper-details dt {
-    color: var(--primary-color);
-    font-weight: 700;
-}
-
-.award-paper-details dd {
-    margin: 0;
-}
-
 .award-committee-list {
     list-style: none;
     padding: 0;
@@ -916,6 +900,56 @@ footer {
 
 .award-committee-list li:last-child {
     border-bottom: none;
+}
+
+.award-paper-feature {
+    background: linear-gradient(135deg, #f8fbff 0%, #ffffff 100%);
+    border: 1px solid #dbe7f3;
+    border-radius: 8px;
+    padding: 1.25rem;
+}
+
+.award-paper-block {
+    margin-bottom: 1rem;
+}
+
+.award-paper-block:last-of-type {
+    margin-bottom: 0.75rem;
+}
+
+.award-field-label {
+    color: var(--secondary-color);
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    margin-bottom: 0.35rem;
+    text-transform: uppercase;
+}
+
+.award-feature-title {
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.award-feature-authors {
+    color: var(--text-color);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.award-feature-affiliations {
+    border-top: 1px solid #dbe7f3;
+    color: var(--dark-gray);
+    font-size: 0.95rem;
+    font-weight: 600;
+    line-height: 1.5;
+    margin: 0;
+    padding-top: 0.85rem;
 }
 
 /* Tutorial Specific Styles */
