@@ -3176,6 +3176,21 @@ footer {
     color: var(--accent-color);
 }
 
+.panel-description {
+    background: #f8fbff;
+    border: 1px solid #dbe7f3;
+    border-left: 4px solid var(--accent-color);
+    border-radius: 8px;
+    color: #334155;
+    line-height: 1.75;
+    margin: 0 0 2rem;
+    padding: 1.2rem 1.4rem;
+}
+
+.panel-description p {
+    margin: 0;
+}
+
 .panel-moderator,
 .panelists {
     margin-bottom: 2rem;
