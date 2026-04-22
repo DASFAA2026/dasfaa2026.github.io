@@ -952,6 +952,29 @@ footer {
     padding-top: 0.85rem;
 }
 
+.award-feature-note {
+    align-items: center;
+    background: #fff8e8;
+    border: 1px solid rgba(240, 138, 0, 0.28);
+    border-left: 4px solid var(--accent-color);
+    border-radius: 6px;
+    color: #7a4b00;
+    display: flex;
+    font-size: 0.98rem;
+    font-weight: 700;
+    line-height: 1.5;
+    margin: 1rem 0 0;
+    padding: 0.8rem 1rem;
+}
+
+.award-feature-note::before {
+    color: var(--accent-color);
+    content: "\f559";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    margin-right: 0.65rem;
+}
+
 /* Tutorial Specific Styles */
 .tutorial-card h3 {
     color: var(--primary-color);
