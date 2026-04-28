@@ -3380,6 +3380,18 @@ footer {
     background-color: #a5c9eb !important;
 }
 
+.wg-session-title {
+    font-weight: 600;
+    line-height: 1.35;
+}
+
+.wg-session-chair {
+    color: rgba(17, 17, 17, 0.78);
+    font-size: 0.8rem;
+    line-height: 1.35;
+    margin-top: 0.35rem;
+}
+
 .wg-poster {
     background-color: #fae2d5 !important;
 }
