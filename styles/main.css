@@ -3380,14 +3380,22 @@ footer {
     background-color: #a5c9eb !important;
 }
 
-.wg-session-title {
+.program-table td.wg-keynote,
+.program-table td.wg-research,
+.program-table td.wg-demo,
+.program-table td.wg-workshop {
     font-weight: 600;
+}
+
+.wg-session-title {
+    font-weight: 700;
     line-height: 1.35;
 }
 
 .wg-session-chair {
     color: rgba(17, 17, 17, 0.78);
     font-size: 0.8rem;
+    font-weight: 400;
     line-height: 1.35;
     margin-top: 0.35rem;
 }
